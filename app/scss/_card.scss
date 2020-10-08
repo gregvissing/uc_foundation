@@ -1,0 +1,86 @@
+.card-layout {
+	display: flex;
+	justify-content: space-between;
+
+	.card {
+		width: 32%;
+		border: lightgray 1px solid;
+		// margin: 50px;
+		border-radius: 5px;
+		overflow: hidden;
+
+		display: inline-block;
+		/* forces our cards to line up horizontally if possible */
+
+		vertical-align: top;
+		/* forces our cards to line up along the top of their container */
+
+		margin-top: 1em;
+		margin-bottom: 1em;
+
+		/* gave top margin and centered card */
+		>* {
+			padding: 15px;
+			margin-bottom: 0;
+		}
+
+		.card-image {
+			padding: 0;
+			margin-bottom: -10px;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		/* added padding to direct chidlren so that EVERYTHING didnt get picked up in padding declaration */
+		.card-header {
+			border-bottom: lightgray 1px solid;
+			border-radius: 5px 5px 0 0;
+			background-color: #464646;
+			color: $white;
+			position: relative;
+
+			/* used border instead of hr because style is for css not html */
+			/* make button clickable because accessibility*/
+			#card-title {
+				margin-bottom: 0;
+			}
+
+			/* removed default h1 margin */
+			.icon {
+				float: right;
+				/* make it go to the right */
+				font-size: 40px;
+				position: relative;
+				/* will move relative to starting position */
+				top: -40px;
+				/* moved the icon up 40px*/
+			}
+		}
+
+		/*colour for card header and button */
+		.cta {
+			line-height: 44px;
+			font-family: "rift", sans-serif;
+
+			button {
+				float: left;
+				border: 0;
+				height: 44px;
+				padding: 0 15px;
+				margin-left: 0;
+			}
+		}
+	}
+}
+
+
+
+/*colour for card header and button */
+// .cta {
+// 	line-height: 44px;
+// 	font-family: "rift", sans-serif;
+// 	display: inline-block !important;
+// 	border: 1px solid $color-brand-black;
+// }

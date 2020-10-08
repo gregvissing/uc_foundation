@@ -1,0 +1,21 @@
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+	background-color: $white !important;
+	border: 2px solid #d8d8d8;
+	color: #444;
+	display: block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	height: 47px;
+	max-width: 100%;
+	padding: .65rem;
+	width: 100%;
+}

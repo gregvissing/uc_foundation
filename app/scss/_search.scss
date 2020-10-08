@@ -1,0 +1,52 @@
+#search {
+	display: none;
+	background: $color-brand-black;
+	padding: 0;
+	margin: 0;
+
+	.BBFormDescription.SearchFormDescription {
+		display: none;
+	}
+
+	.SearchTextBox {
+		margin: 0 !important;
+	}
+
+	div[id*='_pnlSearch'],
+	div[id*='_pnlSearch'] table {
+		width: 100%;
+
+		table.BBFormTable.SearchFormTable>tbody>tr:nth-child(2)>td>table>tbody>tr {
+			display: flex;
+			justify-content: flex-end;
+
+			>td:first-child {
+				display: none;
+			}
+
+			>td:nth-child(2) {
+				width: 300px;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.BBFormTable.SearchFormTable {
+		>tbody {
+
+			>tr:first-child,
+			>tr:last-child {
+				display: none;
+			}
+		}
+	}
+
+	.BBFormSubmitButton.SearchButton {
+		border: none;
+		margin: 0;
+	}
+}
+
+.BBSearchDescriptionStyle {
+	white-space: pre-wrap;
+}

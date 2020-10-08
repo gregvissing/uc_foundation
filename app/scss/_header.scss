@@ -1,0 +1,307 @@
+header {
+	background-color: $white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+
+	ul {
+		list-style: none;
+	}
+
+	a.give.button {
+		color: $white !important;
+		text-decoration: none;
+	}
+
+	>.container {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0;
+
+		@media (max-width: 1220px) {
+			display: block;
+		}
+
+		>div[id*='_Content'] {
+			width: 25%;
+			display: flex;
+			align-items: center;
+
+			@media (max-width: 1220px) {
+				display: inline-flex;
+			}
+
+			a {
+				width: 100%;
+				display: block;
+				align-items: center;
+				justify-content: center;
+
+				img {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+
+		nav {
+			width: 75%;
+			display: flex;
+			justify-content: flex-end;
+			padding-right: 0.75em;
+
+			@media (max-width: 1220px) {
+				display: none !important;
+				width: 400px;
+				position: absolute;
+				padding: 0;
+				right: 0;
+				top: 60px;
+				background-color: $white;
+				-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+				box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+			}
+
+			ul[class*="menu-"] {
+				margin: 0;
+				padding: 0;
+				-moz-transform: skewX(-30deg);
+				-ms-transform: skewX(-30deg);
+				-webkit-transform: skewX(-30deg);
+				transform: skewX(-30deg);
+				display: flex;
+				-webkit-box-align: end;
+				align-items: flex-end;
+				flex-wrap: nowrap;
+
+				@media (max-width: 1220px) {
+					display: flex;
+					flex-direction: column;
+					-moz-transform: skewX(0deg);
+					-ms-transform: skewX(0deg);
+					-webkit-transform: skewX(0deg);
+					transform: skewX(0deg);
+					width: 100%;
+				}
+
+				>li {
+					display: inline-block;
+					list-style: none;
+					transition: all 0.4s ease-in-out;
+					float: left;
+					font-size: 1rem;
+					border-right: 1px solid $color-brand-red;
+					border-left: 1px solid $color-brand-red;
+					position: relative;
+					margin-bottom: 0 !important;
+
+					>a {
+						display: block;
+						height: 60px;
+						line-height: 60px;
+						color: $color-brand-black;
+						text-decoration: none;
+						padding: 0 0.5em;
+						transition: all 0.4s ease-in-out;
+
+						@media (max-width: 1040px) {
+							padding: 0 10px;
+						}
+
+						>* {
+							-moz-transform: skew(30deg);
+							-ms-transform: skew(30deg);
+							-webkit-transform: skew(30deg);
+							transform: skew(30deg);
+							font-size: 1.25em;
+							display: inline-block;
+							text-transform: uppercase;
+							font-weight: 500;
+						}
+
+						.searchIcon {
+							padding-left: 0 !important;
+							padding-right: 0 !important;
+							display: inline-block;
+							margin-right: 5px;
+							line-height: 50px;
+							width: 15px;
+						}
+					}
+
+					ul {
+						display: inline-block;
+						position: absolute;
+						width: 200px;
+						top: 60px;
+						left: 0;
+						padding: 0;
+						margin: 0;
+						background: $white;
+						z-index: 100;
+						-moz-transform: skewX(30deg);
+						-ms-transform: skewX(30deg);
+						-webkit-transform: skewX(30deg);
+						transform: skewX(30deg);
+						-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+						box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+
+						li {
+							display: block;
+							margin: 0;
+							overflow: hidden;
+							height: 0;
+							-webkit-transition: height 200ms ease-in;
+							-moz-transition: height 200ms ease-in;
+							-o-transition: height 200ms ease-in;
+							transition: height 200ms ease-in;
+
+							a {
+								line-height: 40px;
+								padding: 0 10px;
+								display: block;
+								text-decoration: none;
+								color: $color-brand-black;
+								-webkit-transition: all .4s ease-in-out;
+								-moz-transition: all .4s ease-in-out;
+								-ms-transition: all .4s ease-in-out;
+								-o-transition: all .4s ease-in-out;
+								transition: all .4s ease-in-out;
+							}
+
+							>ul {
+								display: none;
+							}
+						}
+					}
+
+					&:hover,
+					&.focus {
+						background-color: $color-brand-black;
+
+						>a {
+							color: $white;
+						}
+
+						ul {
+							li {
+								height: 40px !important;
+								border-bottom: 1px solid #000;
+
+								a:hover {
+									color: $white;
+									background-color: #000;
+								}
+							}
+						}
+					}
+				}
+
+				>li:first-child {
+					border-left: 2px solid #e00122 !important;
+
+					@media (max-width: 1220px) {
+						border: none !important;
+					}
+				}
+
+				li.give {
+					border-right: 2px solid #e00122;
+
+					a {
+						color: $white;
+						position: relative;
+
+						&:before {
+							content: "";
+							background-color: $color-brand-red;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							left: 0;
+							right: 0;
+							z-index: -1;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.hamburger {
+		background: transparent;
+		border: none;
+		display: none;
+		height: 35px;
+		margin: 0;
+		position: absolute;
+		top: 1em !important;
+		right: 20px;
+		width: 35px;
+		z-index: 9999;
+
+		@media (max-width: 1220px) {
+			display: block !important;
+			top: 1em !important;
+		}
+
+		&.is-closed {
+			&:before {
+				-webkit-transform: translate3d(0, 0, 0);
+				-webkit-transition: all .35s ease-in-out;
+				color: #000;
+				content: '';
+				display: block;
+				font-size: 14px;
+				line-height: 35px;
+				opacity: 0;
+				text-align: center;
+				width: 100px;
+			}
+
+			.hamb-top {
+				transition: all 0.35s ease-in-out;
+				background-color: rgba(0, 0, 0, 0.7);
+				top: 5px;
+			}
+
+			.hamb-middle {
+				background-color: rgba(0, 0, 0, 0.7);
+				margin-top: -2px;
+				top: 50%;
+			}
+
+			.hamb-bottom {
+				transition: all 0.35s ease-in-out;
+				background-color: rgba(0, 0, 0, 0.7);
+				bottom: 5px;
+			}
+
+			&:hover {
+				.hamb-top {
+					-webkit-transition: all .35s ease-in-out;
+					top: 0;
+				}
+
+				.hamb-bottom {
+					-webkit-transition: all .35s ease-in-out;
+					bottom: 0;
+				}
+			}
+		}
+	}
+
+	.hamburger.is-closed .hamb-top,
+	.hamburger.is-closed .hamb-middle,
+	.hamburger.is-closed .hamb-bottom,
+	.hamburger.is-open .hamb-top,
+	.hamburger.is-open .hamb-middle,
+	.hamburger.is-open .hamb-bottom {
+		height: 4px;
+		right: 0;
+		position: absolute;
+		width: 80%;
+	}
+}

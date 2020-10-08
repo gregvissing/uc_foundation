@@ -1,0 +1,61 @@
+.button,
+p a.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background-color: $color-brand-red;
+	border-radius: 4px !important;
+	border: none;
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: normal;
+	margin: 1rem 0 1.25rem 1rem;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+
+	&.give {
+		display: none;
+		margin: 0;
+		// position: absolute;
+		// right: 12%;
+		// top: 10px;
+		margin: auto;
+		padding: 10px 15px;
+		border-radius: 0 !important;
+
+		@media (max-width: 1220px) {
+			display: inline-flex !important;
+			float: right;
+			margin-right: 6%;
+		}
+	}
+}
+
+.btn-states {
+	display: flex;
+}
+
+input.magnifyingglass {
+	&.focus {
+		background: green;
+		border: thin dotted;
+	}
+
+	&.hover {
+		background: orange
+	}
+}
+
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group {
+	margin-left: -1px !important;
+}

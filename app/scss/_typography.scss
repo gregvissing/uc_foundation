@@ -1,0 +1,66 @@
+@font-face {
+	font-family: "rift";
+	src: url('https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf') format('otf');
+	font-weight: 300 !important;
+	font-style: italic !important
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	margin: 0 0 0.5em;
+}
+
+h1 {
+	font-size: 2rem;
+
+	@media #{$mq-1000-up} {
+		font-size: 3rem;
+	}
+}
+
+h2 {
+	font-size: 1.5rem;
+
+	@media #{$mq-1000-up} {
+		font-size: 2rem;
+	}
+}
+
+h3 {
+	font-size: 1.25rem;
+
+	@media #{$mq-1000-up} {
+		font-size: 1.5rem;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "rift";
+	display: block;
+	width: 100%;
+	letter-spacing: 1px;
+}
+
+h1,
+h2,
+h3 {
+	&.black-bg {
+		background: $color-brand-black;
+		color: $white;
+		margin: 0;
+		padding: 0.5em 0;
+	}
+}
+
+.row p:last-child {
+	margin: 0;
+}

@@ -1,0 +1,229 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: $white;
+	color: $black;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.3;
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	overflow-x: hidden;
+
+	// @media #{$mq-1000-up} {
+	// 	padding: 1.5rem;
+	// }
+}
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+main {
+	// padding: 20px 0;
+	background-color: $white;
+	// border-radius: 15px;
+	// max-width: 1200px;
+	// margin: 0 auto;
+
+	@media #{$mq-1000-up} {
+		// display: flex;
+		// padding: 1.5rem 0;
+	}
+}
+
+svg.scrollArrow {
+	fill: #e00122;
+	overflow: visible;
+}
+
+.u-text-center {
+	width: 100%;
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content {
+	@media #{$mq-1000-up} {
+		flex: 3;
+	}
+}
+
+aside {
+	@media #{$mq-1000-up} {
+		flex: 1;
+	}
+}
+
+section {
+	width: 100%;
+	padding: 1em 0;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+hr {
+	border: solid $color-brand-red;
+	border-width: 1px 0 0;
+	clear: both;
+	height: 0;
+	margin: 1rem 0;
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+	border-top: 5px solid #e00122 !important;
+	margin-bottom: 0.5em !important;
+}
+
+.container::after,
+.row::after,
+[class*=" g-"]::after,
+[class^="g-"]::after,
+.clearfix::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.row {
+	box-sizing: border-box;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 1 auto;
+	flex: 0 1 auto;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 100%;
+
+	.column {
+		&.one-third {
+			-ms-flex-preferred-size: 33.33333333%;
+			flex-basis: 33.33333333%;
+			max-width: 33.33333333%;
+		}
+	}
+}
+
+.mobile {
+	display: none !important;
+}
+
+.scrollToTop {
+	width: 45px;
+	height: 45px;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 15;
+	display: none;
+	border-radius: 0;
+	overflow: hidden;
+
+	svg.scrollArrow {
+		display: inline-block;
+		height: 100%;
+		width: auto;
+		position: relative;
+		z-index: 100000;
+		margin: auto;
+	}
+}
+
+.page-title {
+	position: relative;
+	overflow: hidden;
+	background-color: #ddd;
+
+	&:before {
+		position: absolute;
+		z-index: 1;
+		width: 60%;
+		right: -20%;
+		content: "";
+		height: 100%;
+		background-position: bottom center;
+		background-size: 100%;
+		background-image: url(https://foundation.uc.edu/image/_2019-redesign/triangle-pattern-page-title-bg.png);
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		padding: 40px 0 0;
+		width: 100% !important;
+
+		.pageTitle {
+			position: relative;
+			padding-right: 100px;
+			z-index: 5;
+			display: inline-block;
+			background-color: $color-brand-red;
+			color: $white;
+			width: unset;
+
+			&:before {
+				position: absolute;
+				-ms-transform: translate(-50%, 0);
+				-webkit-transform: translate(-50%, 0);
+				transform: translate(-50%, 0);
+				left: -290%;
+				right: 100%;
+				bottom: 0;
+				height: 100%;
+				width: 400%;
+				z-index: -1;
+				content: '';
+				background-color: #e00122;
+				-webkit-transform: skew(-30deg);
+				transform: skew(-30deg);
+			}
+		}
+	}
+}
+
+.u-full-width {
+	margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+	.parallelogram {
+		transform: skew(-30deg);
+	}
+}
+
+@media (max-width: 1030px) {
+	section#pageTitle h1.pageTitle {
+		padding-left: 0.3em !important;
+	}
+}
