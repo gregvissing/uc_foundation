@@ -20,7 +20,7 @@ header {
 		justify-content: space-between;
 		padding: 10px 0;
 
-		@media (max-width: 1220px) {
+		@media (max-width: 1030px) {
 			display: block;
 		}
 
@@ -29,7 +29,7 @@ header {
 			display: flex;
 			align-items: center;
 
-			@media (max-width: 1220px) {
+			@media (max-width: 1030px) {
 				display: inline-flex;
 			}
 
@@ -52,7 +52,7 @@ header {
 			justify-content: flex-end;
 			padding-right: 0.75em;
 
-			@media (max-width: 1220px) {
+			@media (max-width: 1030px) {
 				display: none !important;
 				width: 400px;
 				position: absolute;
@@ -76,7 +76,7 @@ header {
 				align-items: flex-end;
 				flex-wrap: nowrap;
 
-				@media (max-width: 1220px) {
+				@media (max-width: 1030px) {
 					display: flex;
 					flex-direction: column;
 					-moz-transform: skewX(0deg);
@@ -202,7 +202,7 @@ header {
 				>li:first-child {
 					border-left: 2px solid #e00122 !important;
 
-					@media (max-width: 1220px) {
+					@media (max-width: 1030px) {
 						border: none !important;
 					}
 				}
@@ -242,7 +242,7 @@ header {
 		width: 35px;
 		z-index: 9999;
 
-		@media (max-width: 1220px) {
+		@media (max-width: 1030px) {
 			display: block !important;
 			top: 1em !important;
 		}
