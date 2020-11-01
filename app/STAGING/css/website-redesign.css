@@ -33,15 +33,15 @@ TYPOGRAPHY
 BODY:	Open Sans
 HEADINGS: Rift
 
-*/
-
-/*
 @font-face {
-	font-family: "rift";
-	src: url("https://foundation.uc.edu/file/webdev/fonts/rift-lightitalic.otf") format("opentype");
+    font-family: "rift";
+	src: url("https://foundation.uc.edu/file/webdev/fonts/Rift-Italic.woff") format("woff"), 
+		url("https://foundation.uc.edu/file/webdev/fonts/Rift-Italic.ttf")  format("truetype"), 
+		url("https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf") format("opentype");
 	font-display: swap;
 	letter-spacing: 0.3px !important;
-} 
+}
+
 */
 
 @font-face {
@@ -52,6 +52,24 @@ HEADINGS: Rift
 	font-display: swap;
 	letter-spacing: 0.3px !important;
 }
+
+/*
+@font-face {
+    font-family: "riftLightItalic";
+	src: url("https://ucfoun-stg-bbis.concoursehost.com/file/webdev/fonts/rift-lightitalic.otf") format("opentype");
+	font-display: swap;
+	letter-spacing: 0.3px !important;
+}
+
+
+@font-face {
+    font-family: "riftBoldItalic";
+	src: url("https://ucfoun-stg-bbis.concoursehost.com/file/webdev/fonts/rift-bolditalic.otf") format("opentype");
+	font-display: swap;
+	letter-spacing: 0.3px !important;
+}
+*/
+
 
 .skipnav {
 	text-align: center;
@@ -81,7 +99,8 @@ header.reduced .skipnav a {
 	padding: 0.25em 0;
 }
 
-.skipnav a:focus, .skipnav a:active {
+.skipnav a:focus,
+.skipnav a:active {
 	position: static;
 	left: 0;
 	width: auto;
@@ -109,8 +128,9 @@ header.reduced .skipnav a {
 	background-color: #e00122;
 }
 
-body, input {
-	font-family: "Open Sans", sans-serif;
+body,
+input {
+	font-family: "Open Sans";
 }
 
 #mockup .BBFormSubmitButton.SearchButton {
@@ -133,33 +153,20 @@ body, input {
 	color: #fff !important;
 }
 
-#mockup #vision .white {
-	color: #fff !important;
-	background-color: #000 !important;
-}
-
-#mockup h1, #mockup h2, #mockup h3, #mockup h4, #mockup h5, #mockup h6, #mockup legend,
-#mockup h1.italic, #mockup h2.italic, #mockup h3.italic, #mockup h4.italic, #mockup h5.italic, #mockup h6.italic {
+#mockup h1,
+#mockup h2,
+#mockup h3,
+#mockup h4,
+#mockup h5,
+#mockup h6,
+#mockup legend {
 	font-family: "rift", sans-serif !important;
-	font-style: unset !important;
-	/* letter-spacing: 0.3px !important; */
-}
-
-mockup h1, #mockup h2 {
-	font-weight: 300 !important;
-}
-
-#mockup h3, #mockup h4, #mockup h5, #mockup h6, #mockup legend {
 	font-weight: 300;
+	font-style: italic;
 }
 
 #mockup.internal section .container h4 {
 	margin-bottom: 0 !important;
-}
-
-#mockup.internal section .container article p img {
-	max-width: 100%;
-	height: unset;
 }
 
 #mockup .form legend {
@@ -177,7 +184,8 @@ mockup h1, #mockup h2 {
 	background-color: #f0f0f0;
 }
 
-#mockup a.button-primary, #mockup a.button-secondary {
+#mockup a.button-primary,
+#mockup a.button-secondary {
 	text-decoration: none;
 }
 
@@ -251,17 +259,21 @@ mockup h1, #mockup h2 {
 	display: inline-block;
 }
 
-#mockup .BBSearchDescriptionStyle, #mockup .BBListEvenRowStyle.SearchEvenRowStyle>td, #mockup .BBListOddRowStyle.SearchOddRowStyle>td {
+#mockup .BBSearchDescriptionStyle,
+#mockup .BBListEvenRowStyle.SearchEvenRowStyle>td,
+#mockup .BBListOddRowStyle.SearchOddRowStyle>td {
 	padding: 1em !important;
 	white-space: inherit !important;
 }
 
-#mockup .BBListEvenRowStyle.SearchEvenRowStyle>td, #mockup .BBListOddRowStyle.SearchOddRowStyle>td {
+#mockup .BBListEvenRowStyle.SearchEvenRowStyle>td,
+#mockup .BBListOddRowStyle.SearchOddRowStyle>td {
 	padding: 1em 1em 0 1em !important;
 	white-space: inherit !important;
 }
 
-#mockup table.SearchTable tbody>tr.BBListEvenRowStyle.SearchEvenRowStyle[id*=rpResultList]>td, #mockup table.SearchTable tbody>tr.BBListOddRowStyle.SearchOddRowStyle[id*=rpResultList]>td {
+#mockup table.SearchTable tbody>tr.BBListEvenRowStyle.SearchEvenRowStyle[id*=rpResultList]>td,
+#mockup table.SearchTable tbody>tr.BBListOddRowStyle.SearchOddRowStyle[id*=rpResultList]>td {
 	padding-bottom: 1em !important;
 }
 
@@ -316,7 +328,13 @@ mockup h1, #mockup h2 {
 	padding: 0 !important;
 }
 
-body, #mockup p, #mockup span:not('.fa'), #mockup span:not(.ti-trash:before), #mockup a, #mockup label, #mockup .additionalInfo span {
+body,
+#mockup p,
+#mockup span:not('.fa'),
+#mockup span:not(.ti-trash:before),
+#mockup a,
+#mockup label,
+#mockup .additionalInfo span {
 	font-size: 1em;
 	font-family: "Open Sans", sans-serif !important;
 }
@@ -333,8 +351,13 @@ a[class*=ti-]:before {
 	color: #222;
 }
 
-#mockup h1 span.skew-fix, #mockup h2 span.skew-fix, #mockup h3 span.skew-fix {
+#mockup h1 span.skew-fix,
+#mockup h2 span.skew-fix,
+#mockup h3 span.skew-fix {
 	font-family: "rift", sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: 0.5px;
 }
 
 #mockup a {
@@ -350,7 +373,48 @@ body.no-scroll {
 	height: 100%;
 }
 
-#mockup a, #mockup button, #mockup .button, #mockup .button-primary, #mockup .button-primary span, #mockup .button-secondary, #mockup .button-secondary span, #mockup li:before, #mockup .BBFormSubmitbutton.PaymentPartSubmitButton, #mockup .scrollToTop, #mockup header, #mockup .QuickSearchFormTable .BBFormSubmitButton.QuickSearchButton, #mockup.home label[id*="_lblQuickSearch"], #mockup.home label[id*="_lblQuickSearch"]:before, #mockup .section-container button span, #mockup .section-container button, #mockup .Results li, #mockup .hamburger, #mockup .radio label, #mockup .modal-default-button, #mockup .navbar-nav>li, #mockup .navbar-nav>li>a, #mockup .navbar-nav>li.button-primary>a, #mockup .nav.navbar-nav.navbar-right li a, #mockup header .nav>li>ul li a, #mockup .nav.navbar-nav.navbar-right, #mockup header .nav .nccUlMenuSub1, #mockup .icon-container-hero a:before, #mockup .thumbnail, #mockup .thumbnail h3, #mockup .tabs__tab, #mockup .radio label, #mockup input[type=button], #mockup #areasToSuppportRadioGroup .radio-list>label, #mockup ul>li>label, #mockup .tt-suggestion, #mockup [class*="Button"], #mockup table td, #mockup header nav>ul.nav.navbar-nav.navbar-right.menu>li:hover>button>*, #mockup .iconSearch, #mockup svg, header > .container {
+#mockup a,
+#mockup button,
+#mockup .button,
+#mockup .button-primary,
+#mockup .button-primary span,
+#mockup .button-secondary,
+#mockup .button-secondary span,
+#mockup li:before,
+#mockup .BBFormSubmitbutton.PaymentPartSubmitButton,
+#mockup .scrollToTop,
+#mockup header,
+#mockup .QuickSearchFormTable .BBFormSubmitButton.QuickSearchButton,
+#mockup.home label[id*="_lblQuickSearch"],
+#mockup.home label[id*="_lblQuickSearch"]:before,
+#mockup .section-container button span,
+#mockup .section-container button,
+#mockup .Results li,
+#mockup .hamburger,
+#mockup .radio label,
+#mockup .modal-default-button,
+#mockup .navbar-nav>li,
+#mockup .navbar-nav>li>a,
+#mockup .navbar-nav>li.button-primary>a,
+#mockup .nav.navbar-nav.navbar-right li a,
+#mockup header .nav>li>ul li a,
+#mockup .nav.navbar-nav.navbar-right,
+#mockup header .nav .nccUlMenuSub1,
+#mockup .icon-container-hero a:before,
+#mockup .thumbnail,
+#mockup .thumbnail h3,
+#mockup .tabs__tab,
+#mockup .radio label,
+#mockup input[type=button],
+#mockup #areasToSuppportRadioGroup .radio-list>label,
+#mockup ul>li>label,
+#mockup .tt-suggestion,
+#mockup [class*="Button"],
+#mockup table td,
+#mockup header nav>ul.nav.navbar-nav.navbar-right.menu>li:hover>button>*,
+#mockup .iconSearch,
+#mockup svg,
+#mockup td > a {
 	border-radius: 0;
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -359,7 +423,13 @@ body.no-scroll {
 	transition: all 0.4s ease-in-out;
 }
 
-#mockup button, #mockup .button, #mockup .button-primary, #mockup .button-secondary, #mockup [class*="Button"], #mockup [class*="button"], #mockup .PaymentPart_CartItemRemoveText {
+#mockup button,
+#mockup .button,
+#mockup .button-primary,
+#mockup .button-secondary,
+#mockup [class*="Button"],
+#mockup [class*="button"],
+#mockup .PaymentPart_CartItemRemoveText {
 	border-radius: 4px !important;
 }
 
@@ -375,7 +445,8 @@ body.no-scroll {
 	border-radius: 0 !important;
 }
 
-#mockup .button-primary, #mockup .BBFormSubmitbutton.PaymentPartSubmitButton {
+#mockup .button-primary,
+#mockup .BBFormSubmitbutton.PaymentPartSubmitButton {
 	color: #fff;
 	background-color: #e00122 !important;
 	border-color: #e00122 !important;
@@ -439,7 +510,8 @@ a[id*="CartGrid_lbRemoveAll"] {
 	border: 1px dashed blue;
 }
 
-#mockup ul, #mockup ol {
+#mockup ul,
+#mockup ol {
 	padding: 0;
 }
 
@@ -509,7 +581,8 @@ pre .key {
   #BUTTON
 \*------------------------------------*/
 
-#mockup button, #mockup .button {
+#mockup button,
+#mockup .button {
 	border-color: transparent !important;
 }
 
@@ -517,7 +590,9 @@ pre .key {
 	border-color: #000 !important;
 }
 
-#mockup button, #mockup .button, #mockup input {
+#mockup button,
+#mockup .button,
+#mockup input {
 	font-size: 1em !important;
 }
 
@@ -532,7 +607,6 @@ pre .key {
 }
 
 #mockup .button-primary span {
-	font-family: "Open Sans", sans-serif;
 	color: #ffffff !important;
 }
 
@@ -609,16 +683,6 @@ pre .key {
 	box-shadow: 0px 0px 2px rgb(30, 174, 219);
 }
 
-#arrowShadow {
-   opacity: 1;
-   transition: opacity 0.6s;
-}
-
-#arrowShadow:hover {
-   opacity: 0;
-   transition: opacity 0.6s;
-}
-
 /*
 #mockup .scrollToTop:hover {
 	-webkit-box-shadow: none;
@@ -633,13 +697,7 @@ pre .key {
 }
 
 #mockup svg.scrollArrow.down {
-   	width: auto;
-    height: 40px;
-}
-
-svg.scrollArrow {
-    fill: #e00122;
-    overflow: visible;
+	width: 80%
 }
 
 #mockup .scrollToTop:hover svg.scrollArrow {
@@ -833,8 +891,7 @@ svg.scrollArrow {
 }
 
 #mockup .u-full-width {
-	width: 100% !important;
-	max-width: 100% !important;
+	width: 100%;
 }
 
 #mockup .u-max-full-width {
@@ -890,7 +947,8 @@ svg.scrollArrow {
 	transform: translateY(-50%) translateX(-50%);
 }
 
-#mockup .u-text-center, #mockup .text-center {
+#mockup .u-text-center,
+#mockup .text-center {
 	text-align: center !important;
 }
 
@@ -949,22 +1007,27 @@ svg.scrollArrow {
 	height: 100vh;
 }
 
-#mockup ol, #mockup ul {
+#mockup ol,
+#mockup ul {
 	margin: 0;
 	list-style: none;
 }
 
-#mockup.internal ul.rqList *, #mockup.internal ul.sdList * {
+#mockup.internal ul.rqList *,
+#mockup.internal ul.sdList * {
 	margin: 0 0 0 2em;
 	font-size: 1em;
 	list-style: disc !important;
 }
 
-#mockup.internal ul.rqList li ul *, #mockup.internal ul.sdList li ul * {
+#mockup.internal ul.rqList li ul *,
+#mockup.internal ul.sdList li ul * {
 	list-style: circle !important;
 }
 
-#mockup .container:after, #mockup .row:after, #mockup .u-cf {
+#mockup .container:after,
+#mockup .row:after,
+#mockup .u-cf {
 	content: "";
 	display: table;
 	clear: both;
@@ -1014,7 +1077,6 @@ svg.scrollArrow {
 	right: 0;
 	left: 0;
 	z-index: 1030;
-	padding: 0 !important;
 }
 
 #mockup.home header {
@@ -1022,13 +1084,8 @@ svg.scrollArrow {
 	position: sticky;
 }
 
-#mockup .navbar-nav>li>a>span {
-	display: none;
-}
-
 #mockup header .container>nav>div {
 	display: inline-block;
-	height: 50px;
 }
 
 #mockup header a>img {
@@ -1053,8 +1110,8 @@ svg.scrollArrow {
 	padding: 0.5em 0 0;
 }
 
-#mockup header.reduced > .container {
-	padding: 5px 0;
+#mockup.home header.reduced {
+	padding: 0.5em 0;
 }
 
 #mockup.give-to-uc header.reduced {
@@ -1062,7 +1119,11 @@ svg.scrollArrow {
 	padding: 0.5em 0;
 }
 
-#mockup header .img-responsive, #mockup .thumbnail>img, #mockup .thumbnail a>img, #mockup .carousel-inner>.item>img, #mockup .carousel-inner>.item>a>img {
+#mockup header .img-responsive,
+#mockup .thumbnail>img,
+#mockup .thumbnail a>img,
+#mockup .carousel-inner>.item>img,
+#mockup .carousel-inner>.item>a>img {
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -1078,6 +1139,10 @@ svg.scrollArrow {
 	content: url("file/redesign/img/searchIcon.svg");
 	display: inline-block;
 	margin-right: 5px;
+}
+
+#mockup header {
+	padding: 0;
 }
 
 #mockup header img {
@@ -1127,8 +1192,8 @@ svg.scrollArrow {
 	display: inline-block !important;
 }
 
-header nav {
-	height: 50px;
+#mockup header nav {
+	display: inline;
 }
 
 /*------------------------------------*\
@@ -1143,8 +1208,6 @@ header nav {
 	left: -1em;
 	top: 100%;
 	width: 200px;
-	-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
-	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
 }
 
 #mockup header .nav .nccUlMenuSub1 {
@@ -1171,16 +1234,20 @@ header nav {
 	#mockup {
 		overflow: hidden !important;
 	}
+
 	#mockup header .nav>li>a:focus:before {
 		display: none;
 	}
-	#mockup header.reduced > .container {
-		padding: 5px 0 !important;
+
+	#mockup header.reduced {
+		padding: 0.75em 0 !important;
 	}
+
 	#mockup header .nav>li ul.nccUlMenuSub1 li {
 		height: 40px;
 		border-bottom: 1px solid #000;
 	}
+
 	#mockup .navbar-nav>li.fa-home:before {
 		z-index: 5;
 		color: #000;
@@ -1191,15 +1258,19 @@ header nav {
 		right: 0;
 		margin: auto;
 	}
+
 	#mockup .navbar-nav>li.fa-home a {
 		color: #fff !important;
 	}
+
 	#mockup header ul.nav li.parent a span {
 		display: inline;
 	}
+
 	#mockup header ul.nav li.parent a.selected {
 		border: 1px solid #fff;
 	}
+
 	#mockup header nav>div {
 		margin-left: 20px;
 	}
@@ -1215,16 +1286,20 @@ header nav {
 	transition: all 0.4s ease-in-out; */
 }
 
-#mockup .parent.selected, #mockup .nccUlMenuSub1>li.selected>a.selected {
+#mockup .parent.selected,
+#mockup .nccUlMenuSub1>li.selected>a.selected {
 	background-color: #000 !important;
 	color: #fff !important;
 }
 
-#mockup .parent.selected>a, #mockup .nccUlMenuSub1 .parent.selected>a, #mockup .nccUlMenuSub1 li.selected a.selected {
+#mockup .parent.selected>a,
+#mockup .nccUlMenuSub1 .parent.selected>a,
+#mockup .nccUlMenuSub1 li.selected a.selected {
 	color: #fff !important;
 }
 
-#mockup header .nav>li:hover>a, #mockup header .nav>li.focus>a {
+#mockup header .nav>li:hover>a,
+#mockup header .nav>li.focus>a {
 	color: #fff !important;
 }
 
@@ -1265,7 +1340,9 @@ header nav {
 	position: relative;
 }
 
-#mockup .BBFormTable.SearchFormTable input[type='text'], #mockup .BBFormTable.SearchFormTable textarea, #mockup .BBFormTable.SearchFormTable select {
+#mockup .BBFormTable.SearchFormTable input[type='text'],
+#mockup .BBFormTable.SearchFormTable textarea,
+#mockup .BBFormTable.SearchFormTable select {
 	margin: 0;
 }
 
@@ -1309,7 +1386,10 @@ header nav {
 	display: none;
 }
 
-#mockup table[id*=_pnlResults] td[id*=_resultsId], #mockup .BBSearchDescriptionStyle, #mockup .BBListOddRowStyle.SearchOddRowStyle td, #mockup .BBListEvenRowStyle.SearchEvenRowStyle td {
+#mockup table[id*=_pnlResults] td[id*=_resultsId],
+#mockup .BBSearchDescriptionStyle,
+#mockup .BBListOddRowStyle.SearchOddRowStyle td,
+#mockup .BBListEvenRowStyle.SearchEvenRowStyle td {
 	display: table-cell !important;
 	width: 100% !important;
 }
@@ -1385,7 +1465,7 @@ header nav {
 }
 
 #mockup label[id*="_lblQuickSearch"] {
-/*display: block !important;*/
+	display: block !important;
 	visibility: visible !important;
 	position: absolute;
 	top: 3px;
@@ -1504,7 +1584,7 @@ header nav {
 #mockup .QuickSearchFormTable .BBFormSubmitButton.QuickSearchButton {
 	display: inline-block !important;
 	position: relative;
-	color: #FFF;
+	color: #e00122;
 	background-color: #e00122;
 	width: 100% !important;
 }
@@ -1576,6 +1656,58 @@ header nav {
 	padding: 0px !important;
 }
 
+#search {
+	display: none;
+	background: #000;
+	padding: 0;
+	margin: 0;
+}
+
+#search .BBFormDescription.SearchFormDescription {
+	display: none;
+}
+
+#search .SearchTextBox {
+	margin: 0 !important;
+}
+
+#search div[id*="_pnlSearch"],
+#search div[id*="_pnlSearch"] table {
+	width: 100%;
+}
+
+#search div[id*="_pnlSearch"] table.BBFormTable.SearchFormTable>tbody>tr:nth-child(2)>td>table>tbody>tr,
+#search div[id*="_pnlSearch"] table table.BBFormTable.SearchFormTable>tbody>tr:nth-child(2)>td>table>tbody>tr {
+	display: flex;
+	justify-content: flex-end;
+}
+
+#search div[id*="_pnlSearch"] table.BBFormTable.SearchFormTable>tbody>tr:nth-child(2)>td>table>tbody>tr>td:first-child,
+#search div[id*="_pnlSearch"] table table.BBFormTable.SearchFormTable>tbody>tr:nth-child(2)>td>table>tbody>tr>td:first-child {
+	display: none;
+}
+
+#search div[id*="_pnlSearch"] table.BBFormTable.SearchFormTable>tbody>tr:nth-child(2)>td>table>tbody>tr>td:nth-child(2),
+#search div[id*="_pnlSearch"] table table.BBFormTable.SearchFormTable>tbody>tr:nth-child(2)>td>table>tbody>tr>td:nth-child(2) {
+	width: 300px;
+	margin-right: 5px;
+}
+
+#search .BBFormTable.SearchFormTable>tbody>tr:first-child,
+#search .BBFormTable.SearchFormTable>tbody>tr:last-child {
+	display: none;
+}
+
+#search .BBFormSubmitButton.SearchButton {
+	border: none;
+	margin: 0;
+}
+
+.BBSearchDescriptionStyle {
+	white-space: pre-wrap;
+}
+
+
 /*------------------------------------*\
   #HERO
 \*------------------------------------*/
@@ -1587,7 +1719,6 @@ header nav {
 	background-repeat: no-repeat; */
 	position: relative;
 	overflow: hidden;
-	max-height: 500px;
 }
 
 #mockup section.hero .trianglePattern {
@@ -1601,8 +1732,7 @@ header nav {
 
 #mockup section.hero .btn-container {
 	text-align: center;
-	position: absolute;
-	bottom: 5em;
+	position: relative;
 	right: 0;
 	left: 0;
 	width: 100%;
@@ -1628,7 +1758,6 @@ header nav {
 }
 
 #mockup section.hero a {
-	font-size: 1em;
 	margin: 0 1em;
 	display: inline-block;
 	opacity: 1;
@@ -1642,12 +1771,12 @@ header nav {
 }
 
 #mockup section.hero a span {
-	font-family: "Open Sans", sans-serif;
 	line-height: 1.75em;
 	font-size: 1.5em;
 }
 
-#mockup section.hero a.button-secondary, #mockup section.hero a.button-secondary span {
+#mockup section.hero a.button-secondary,
+#mockup section.hero a.button-secondary span {
 	background-color: rgba(64, 64, 64, 1) !important;
 }
 
@@ -1659,28 +1788,17 @@ header nav {
 	background-color: transparent !important;
 }
 
-#mockup .icon-container-hero {
-	position: absolute;
-	bottom: 0.75em;
-	left: 0;
-	right: 0;
-	margin: auto;
-	z-index: 10;
-}
-
 #mockup .icon-container-hero a.next-section {
-    width: 40px;
-    height: 40px;
-    transform: rotate(180deg) !important;
-    -webkit-transform: rotate(180deg) !important;
-    border-radius: 0;
-    overflow: visible;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+	width: 40px;
+	height: 40px;
+	transform: rotate(180deg) !important;
+	-webkit-transform: rotate(180deg) !important;
+	border-radius: 0;
+	overflow: hidden;
 }
 
-#mockup .icon-container-hero a.next-section, #mockup .icon-container-hero a.next-section:hover {
+#mockup .icon-container-hero a.next-section,
+#mockup .icon-container-hero a.next-section:hover {
 	text-decoration: none;
 }
 
@@ -1697,6 +1815,283 @@ header nav {
 #mockup .icon-container-hero a.next-section:hover svg.scrollArrow.down {
 	fill: #fff;
 }
+
+#hero {
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* min-height: 500px; */
+}
+
+#AdminPageBody section.hero {
+	max-height: auto !important;
+	height: auto !important;
+}
+
+#hero .btn-container:after {
+	position: absolute;
+	content: "";
+	background-color: #ce0e2d;
+	opacity: .5;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	left: 20%;
+	margin: 0;
+	z-index: 0;
+	width: 100%;
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+	-webkit-animation: animateLeft 1s ease-in;
+	-webkit-animation-fill-mode: forwards;
+}
+
+#hero>img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: -30%;
+	width: 80%;
+	z-index: 1;
+}
+
+#hero .btn-container {
+	text-align: center;
+	position: relative;
+	right: 0;
+	left: 0;
+	width: 100%;
+	margin: auto;
+}
+
+#hero .icon-container-hero {
+	margin: 0.75em 0 !important;
+	position: relative;
+	display: block;
+}
+
+#hero a {
+	margin: 0 0.75em;
+	padding: 0 2em;
+	display: inline-block;
+	opacity: 1;
+	height: 100%;
+	position: relative;
+	z-index: 5;
+	-webkit-animation: animateOpacity 1s ease-in;
+	-webkit-animation-fill-mode: forwards;
+	-webkit-animation-delay: .75s;
+	animation-delay: .75s;
+	border-radius: 0 !important;
+	border: none;
+}
+
+#hero .icon-container-hero a.next-section,
+#hero .icon-container-hero a.next-section:hover {
+	text-decoration: none;
+}
+
+#hero .icon-container-hero a.next-section {
+	width: 40px;
+	height: 40px;
+	transform: rotate(180deg) !important;
+	-webkit-transform: rotate(180deg) !important;
+	border-radius: 0;
+	overflow: visible;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+#hero a span {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.75em;
+	font-size: 1.5em;
+}
+
+svg.scrollArrow.down {
+	width: auto;
+	height: 40px;
+}
+
+svg.scrollArrow {
+	fill: #e00122;
+	overflow: visible;
+}
+
+.scrollToTop {
+	width: 45px;
+	height: auto;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	z-index: 15;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+	display: none;
+	border-radius: 0;
+	overflow: visible;
+}
+
+#arrowShadow {
+	opacity: 1;
+	transition: opacity 0.6s;
+}
+
+#arrowShadow:hover {
+	opacity: 0;
+	transition: opacity 0.6s;
+}
+
+#hero .hero-bg {
+	display: block;
+	margin: 0 auto;
+}
+
+#mockup .btn-group>.btn:last-child:not(:first-child),
+#mockup .btn-group>.dropdown-toggle:not(:first-child) {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+#mockup .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+#mockup button#MonthlyDonation {
+	background-color: #c4141b;
+	border-color: #c4141b;
+	border: 2px solid #c4141b;
+}
+
+#mockup button#SingleDonation,
+#mockup button#PledgePayment {
+	background-color: #c4141b !important;
+	border-color: #c4141b;
+	border: 2px solid #c4141b;
+}
+
+.btn-group .btn+.btn,
+.btn-group .btn+.btn-group,
+.btn-group .btn-group+.btn,
+.btn-group .btn-group+.btn-group {
+	margin-left: -1px;
+}
+
+#heroDonationForm #hero .donate-buttons-row>.btn-group.btn-group-lg>.btn {
+	color: #fff !important;
+}
+
+#heroDonationForm .btn-lg,
+#heroDonationForm .btn-group-lg>.btn {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 5em;
+}
+
+.btn-group>.btn,
+.btn-group-vertical>.btn {
+	position: relative;
+	float: left;
+}
+
+#mockup #hero h2 {
+	font-size: 1.728em;
+}
+
+#mockup #hero h4 {
+	font-size: 1.2em;
+}
+
+#mockup #hero #heroDonationForm input#pledge_donate_now,
+#mockup #hero #heroDonationForm input#monthly_donate_now,
+#mockup #hero #heroDonationForm input#single_donate_now,
+#mockup #hero #heroDonationForm input#single_donate_btn,
+#mockup #hero #heroDonationForm input.DonationSubmitButton {
+	text-transform: none !important;
+	border-color: #c4141b !important;
+	border: 2px solid #c4141b !important;
+	border-radius: 5em !important;
+	display: inline-block;
+	position: relative;
+	font-weight: bold;
+	box-sizing: border-box;
+	line-height: 1.33333em;
+	font-size: 1.125rem;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 38px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-family: "Open Sans", sans-serif;
+	-webkit-transition: color .3s cubic-bezier(.55, .21, .51, .75), background-color .3s cubic-bezier(.55, .21, .51, .75), border-color .3s cubic-bezier(.55, .21, .51, .75);
+	-moz-transition: color .3s cubic-bezier(.55, .21, .51, .75), background-color .3s cubic-bezier(.55, .21, .51, .75), border-color .3s cubic-bezier(.55, .21, .51, .75);
+	transition: color .3s cubic-bezier(.55, .21, .51, .75), background-color .3s cubic-bezier(.55, .21, .51, .75), border-color .3s cubic-bezier(.55, .21, .51, .75);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: auto;
+}
+
+#mockup #hero #heroDonationForm .button,
+#mockup #hero #heroDonationForm p a.button,
+#mockup #hero #heroDonationForm button,
+#mockup #hero #heroDonationForm input[type="button"],
+#mockup #hero #heroDonationForm input[type="submit"] {
+	background-color: #e00122;
+	border-radius: 0;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: normal;
+	margin: 1rem 0 1.25rem 1rem;
+	padding: .65rem 1rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#mockup #miniDonationForm {
+	width: 400px;
+	display: inline-block;
+	background: #fff;
+	margin: 2em 0px;
+	padding: 0.5rem;
+	position: relative;
+	-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+}
+
+.dollar-box input[type="button"] {
+	color: #5a5a5a !important;
+	background: #fff !important;
+	text-transform: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.dollar-box.active input,
+.dollar-box input:hover {
+	background: #c4141b !important;
+	color: #fff !important;
+	border: none !important;
+	box-shadow: none !important;
+	color: #5b5b5b;
+}
+
 
 /*------------------------------------*\
   #MANIFESTO
@@ -1945,10 +2340,12 @@ header nav {
 	#mockup section#nextNowSection .mobile-bg {
 		display: inline-block;
 	}
+
 	#mockup section#nextNowSection .absolute-center {
 		width: 400px;
 		height: 275px;
 	}
+
 	#mockup section#nextNowSection .bg {
 		display: none;
 	}
@@ -1972,7 +2369,8 @@ header nav {
   #FOOTER
 \*------------------------------------*/
 
-#mockup footer a, #mockup footer p {
+#mockup footer a,
+#mockup footer p {
 	font-size: 13.5px;
 }
 
@@ -2075,6 +2473,7 @@ header nav {
 	0% {
 		left: 150%;
 	}
+
 	100% {
 		left: 25%;
 	}
@@ -2084,24 +2483,20 @@ header nav {
 	0% {
 		opacity: 0;
 	}
+
 	100% {
 		opacity: 1;
 	}
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-   section.hero .btn-container:after,
-   section.hero a {
-       animation: none;
-   }
-}
-
-#mockup .fade-enter-active, .fade-leave-active {
+#mockup .fade-enter-active,
+.fade-leave-active {
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
 
-#mockup .fade-enter, #mockup .fade-leave-to {
+#mockup .fade-enter,
+#mockup .fade-leave-to {
 	opacity: 0;
 }
 
@@ -2266,7 +2661,8 @@ header nav {
 	color: #e00122;
 }
 
-#mockup .PaymentPart_PersonalInfoContainer, #mockup .PaymentPart_CartSummary {
+#mockup .PaymentPart_PersonalInfoContainer,
+#mockup .PaymentPart_CartSummary {
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -2295,7 +2691,8 @@ max-width: 100%;
 #mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer:nth-child(6),
 */
 
-#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer:nth-child(10), #mockup .PaymentPart_UseAsBillingContainer {
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer:nth-child(10),
+#mockup .PaymentPart_UseAsBillingContainer {
 	clear: both;
 }
 
@@ -2304,13 +2701,18 @@ max-width: 100%;
 	clear: both !important;
 }
 
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer:nth-child(5) {
+	/* float: right; */
+}
+
 #mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer {
 	position: relative;
 	padding-right: 0.5em;
 	padding-left: 0.5em;
 }
 
-#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer>label, #mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer>span.DCFieldCaption {
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer>label,
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer>span.DCFieldCaption {
 	padding-left: 15px;
 	margin-bottom: 0;
 }
@@ -2361,7 +2763,9 @@ max-width: 100%;
 	color: #e00122;
 }
 
-#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer input, #mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer textarea, #mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer select {
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer input,
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer textarea,
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer select {
 	max-width: 100% !important;
 	width: 100% !important;
 	display: inline-block;
@@ -2377,13 +2781,21 @@ max-width: 100%;
 	display: inline-block;
 }
 
-#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer select, #mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer textarea {
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer select,
+#mockup .PaymentPart_PersonalInfoContainer .BBDivFieldContainer textarea {
 	max-width: 100% !important;
 	width: 100% !important;
 	display: inline-block;
 }
 
-#mockup .BBDivFieldContainer .BBFormSelectList, #mockup .BBDivFieldContainer .BBFormTextbox, #mockup .BBDivFieldContainer .BBFormTextArea, #mockup .BBDivFieldContainer input[type="text"], #mockup .BBDivFieldContainer input[type="password"], #mockup .BBDivFieldContainer textarea, #mockup .BBDivFieldContainer select, #mockup .BBDivFieldContainer .SpellSuggestionList {
+#mockup .BBDivFieldContainer .BBFormSelectList,
+#mockup .BBDivFieldContainer .BBFormTextbox,
+#mockup .BBDivFieldContainer .BBFormTextArea,
+#mockup .BBDivFieldContainer input[type="text"],
+#mockup .BBDivFieldContainer input[type="password"],
+#mockup .BBDivFieldContainer textarea,
+#mockup .BBDivFieldContainer select,
+#mockup .BBDivFieldContainer .SpellSuggestionList {
 	max-width: 99%;
 	margin-bottom: 0;
 }
@@ -2410,7 +2822,8 @@ max-width: 100%;
 	margin: 0px auto;
 }
 
-#mockup .PaymentPart_CartHeaderCell.PaymentPart_CartHeaderQuantityCell, #mockup td[id*="tdCartQuantityCell"] {
+#mockup .PaymentPart_CartHeaderCell.PaymentPart_CartHeaderQuantityCell,
+#mockup td[id*="tdCartQuantityCell"] {
 	color: transparent;
 }
 
@@ -2418,7 +2831,8 @@ max-width: 100%;
 	color: #fff !important;
 }
 
-#mockup .make-onetime, #mockup .make-recurring {
+#mockup .make-onetime,
+#mockup .make-recurring {
 	padding: 0 1em;
 	height: 35px;
 	line-height: 35px;
@@ -2432,7 +2846,9 @@ form {
 	margin-bottom: 0 !important;
 }
 
-#mockup input, #mockup select, #mockup button {
+#mockup input,
+#mockup select,
+#mockup button {
 	border-radius: 0 !important;
 }
 
@@ -2464,7 +2880,8 @@ form {
 	padding: 0 !important;
 }
 
-#mockup .form-group.field-input input, #mockup .form-group.field-select select {
+#mockup .form-group.field-input input,
+#mockup .form-group.field-select select {
 	margin-bottom: 0;
 }
 
@@ -2474,7 +2891,12 @@ form {
 	margin: 0 auto;
 }
 
-.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
 	border: 1px solid #e00122;
 	background: #e00122 !important;
 	font-weight: normal;
@@ -2494,7 +2916,8 @@ form {
 	padding: 0;
 }
 
-.PaymentPart_CartSummaryCaptionContainer label, .PaymentPart_CartSummaryFieldContainer span {
+.PaymentPart_CartSummaryCaptionContainer label,
+.PaymentPart_CartSummaryFieldContainer span {
 	font-weight: 400;
 	font-size: 2em !important;
 	font-weight: bold;
@@ -2526,13 +2949,15 @@ form {
 	margin-left: 0 !important;
 }
 
-#mockup .column:not(.offset-by-three), #mockup .columns:not(.offset-by-three) {
+#mockup .column:not(.offset-by-three),
+#mockup .columns:not(.offset-by-three) {
 	/*padding: 0 5px !important; */
 	margin-left: 0;
 	margin-bottom: 0;
 }
 
-#mockup .field-checkbox label, #mockup .field-checkbox .field-wrap {
+#mockup .field-checkbox label,
+#mockup .field-checkbox .field-wrap {
 	display: inline-block;
 	margin: 0;
 }
@@ -2551,7 +2976,8 @@ form {
 	margin-left: 3%;
 }
 
-#mockup div[id^='Giftdetails'], #mockup div[id^='Giftdetails'] fieldset {
+#mockup div[id^='Giftdetails'],
+#mockup div[id^='Giftdetails'] fieldset {
 	margin-bottom: 0;
 }
 
@@ -2599,7 +3025,9 @@ form {
 	font-size: 1em;
 }
 
-#mockup .errors.help-block, #mockup .error-message, #mockup .BBFormValidatorSummary.DonationValidationSummary {
+#mockup .errors.help-block,
+#mockup .error-message,
+#mockup .BBFormValidatorSummary.DonationValidationSummary {
 	color: #a94442 !important;
 }
 
@@ -2638,7 +3066,8 @@ form {
 	border-collapse: collapse;
 }
 
-#mockup th, #mockup td {
+#mockup th,
+#mockup td {
 	text-align: left;
 	padding: 8px;
 }
@@ -2665,7 +3094,8 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 
 /* Global "table" column settings */
 
-#mockup .fund-name, #mockup .totals-item label {
+#mockup .fund-name,
+#mockup .totals-item label {
 	display: inline-block;
 	width: 65%;
 	padding: 0 10px;
@@ -2720,16 +3150,33 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 
 /* This is used as the traditional .clearfix class */
 
-#mockup .group:before, #mockup .shopping-cart:before, #mockup .column-labels:before, #mockup .fund:before, #mockup .totals-item:before, #mockup .group:after, #mockup .shopping-cart:after, #mockup .column-labels:after, #mockup .fund:after, #mockup .totals-item:after {
+#mockup .group:before,
+#mockup .shopping-cart:before,
+#mockup .column-labels:before,
+#mockup .fund:before,
+#mockup .totals-item:before,
+#mockup .group:after,
+#mockup .shopping-cart:after,
+#mockup .column-labels:after,
+#mockup .fund:after,
+#mockup .totals-item:after {
 	content: '';
 	display: table;
 }
 
-#mockup .group:after, #mockup .shopping-cart:after, #mockup .column-labels:after, #mockup .fund:after, #mockup .totals-item:after {
+#mockup .group:after,
+#mockup .shopping-cart:after,
+#mockup .column-labels:after,
+#mockup .fund:after,
+#mockup .totals-item:after {
 	clear: both;
 }
 
-#mockup .group, #mockup .shopping-cart, #mockup .column-labels, #mockup .fund, #mockup .totals-item {
+#mockup .group,
+#mockup .shopping-cart,
+#mockup .column-labels,
+#mockup .fund,
+#mockup .totals-item {
 	zoom: 1;
 }
 
@@ -2737,7 +3184,8 @@ Side note: I know that this style of nesting in SASS doesn't result in the most 
 
 /* Apply dollar signs */
 
-#mockup .fund .fund-line-amount:before, #mockup .totals-value:before {
+#mockup .fund .fund-line-amount:before,
+#mockup .totals-value:before {
 	content: '$';
 }
 
@@ -2763,7 +3211,9 @@ left: 5px;  */
 	font-weight: bold;
 }
 
-#mockup .column-labels .fund-name, #mockup .column-labels .fund-details, #mockup .column-labels .fund-removal {
+#mockup .column-labels .fund-name,
+#mockup .column-labels .fund-details,
+#mockup .column-labels .fund-removal {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
@@ -2823,13 +3273,15 @@ left: 5px;  */
 	margin-bottom: 0 !important;
 }
 
-#mockup ul.radio-list>li.area-item input, #mockup ul.radio-list>li.giftType-item input {
+#mockup ul.radio-list>li.area-item input,
+#mockup ul.radio-list>li.giftType-item input {
 	position: absolute;
 	opacity: 0;
 	margin: 0;
 }
 
-#mockup ul.radio-list>li.area-item label, #mockup ul.radio-list>li.giftType-item label {
+#mockup ul.radio-list>li.area-item label,
+#mockup ul.radio-list>li.giftType-item label {
 	margin: 0;
 }
 
@@ -2844,42 +3296,54 @@ left: 5px;  */
 	#mockup.home .QuickSearchFormTable td:nth-child(2) {
 		width: 356px;
 	}
+
 	#mockup.home .QuickSearchFormTable td:first-child {
 		display: none;
 	}
+
 	#mockup #hero .btn-container {
 		bottom: 0;
 	}
+
 	#mockup #hero .btn-container a {
 		margin: 3px auto;
 	}
+
 	#mockup .hero .btn-container a {
 		width: 60%;
 		margin: 10px auto;
 	}
+
 	#mockup section.hero .btn-container:after {
 		background-color: transparent !important;
 	}
+
 	#mockup #hero .icon-container-hero {
 		display: none;
 	}
+
 	#mockup ul.radio-list>li.area-item {
 		position: relative;
 		padding: 5px 0 !important;
 		width: 50% !important;
 	}
+
 	#mockup ul.radio-list>li.area-item:last-child {
 		width: 100% !important;
 	}
+
 	#mockup ul.radio-list>li.area-item label {
 		padding: .75em;
 	}
+
 	#mockup #areasToSuppportRadioGroup .radio-list {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
-	#mockup #addToCart>.button-primary, #mockup .donate-now>a {
+
+	#mockup #addToCart>.button-primary,
+	#mockup .donate-now>a {
 		margin: 5px auto !important;
 		display: block !important;
 		width: 200px;
@@ -2913,7 +3377,8 @@ left: 5px;  */
 	border: 1px solid #bbb;
 }
 
-#mockup .PaymentPart_PesonalInfoCheckbox>label:not(.required)::before, #mockup .PaymentPart_PesonalInfoCheckbox>label:not(.required)::after {
+#mockup .PaymentPart_PesonalInfoCheckbox>label:not(.required)::before,
+#mockup .PaymentPart_PesonalInfoCheckbox>label:not(.required)::after {
 	position: absolute;
 	content: '';
 	display: inline-block;
@@ -3001,6 +3466,7 @@ left: 5px;  */
 }
 
 @media screen and (max-width: 1000px) {
+
 	/* #mockup .wizard-nav.wizard-nav-pills {
 		padding-bottom: 0;
 		margin-left: 0%;
@@ -3022,44 +3488,53 @@ left: 5px;  */
 @media screen and (max-width: 650px) {
 	#mockup .mobile-nav {
 		display: block !important;
-		top: .85em;
+		top: .75em;
 		right: 0;
 		left: 0;
 		margin: auto;
 		width: 300px;
 		position: relative !important;
 	}
+
 	#mockup .shopping-cart {
 		margin: 0;
 		padding-top: 20px;
 		border-top: 1px solid #eee;
 	}
+
 	#mockup .column-labels {
 		display: none;
 	}
+
 	#mockup .fund-name {
 		display: inline-block;
 		width: auto;
 	}
+
 	#mockup .fund-details {
 		float: none;
 		margin-bottom: 10px;
 		width: auto;
 	}
+
 	#mockup .fund-amount {
 		clear: both;
 		width: 70px;
 	}
+
 	#mockup .fund-removal {
 		width: auto;
 	}
+
 	#mockup .fund-line-amount {
 		float: right;
 		width: 70px;
 	}
+
 	#mockup a.scrollToTop {
 		right: 10px !important;
 	}
+
 	#mockup #pageTitle h1.pageTitle {
 		font-size: 3.5rem !important;
 	}
@@ -3071,18 +3546,22 @@ left: 5px;  */
 	#mockup .fund-removal {
 		display: inline-block;
 	}
+
 	#mockup .fund-line-amount {
 		display: inline-block;
 		clear: left;
 		width: auto;
 		margin-top: 10px;
 	}
+
 	#mockup .fund .fund-line-amount:before {
 		content: 'Item Total: $';
 	}
+
 	#mockup .totals .totals-item label {
 		width: 60%;
 	}
+
 	#mockup .totals .totals-item .totals-value {
 		width: 40%;
 	}
@@ -3121,12 +3600,16 @@ left: 5px;  */
 	border: 1px solid #ccc;
 }
 
-#mockup ::-webkit-input-placeholder, #mockup :-ms-input-placeholder, #mockup ::-webkit-input-placeholder {
+#mockup ::-webkit-input-placeholder,
+#mockup :-ms-input-placeholder,
+#mockup ::-webkit-input-placeholder {
 	/* Edge */
 	color: #000000 !important;
 }
 
-#mockup ::-webkit-input-placeholder, #mockup :-ms-input-placeholder, #mockup ::placeholder {
+#mockup ::-webkit-input-placeholder,
+#mockup :-ms-input-placeholder,
+#mockup ::placeholder {
 	/* Edge */
 	color: #000000 !important;
 }
@@ -3231,7 +3714,8 @@ left: 5px;  */
 	opacity: 0;
 }
 
-#mockup .modal-enter .modal-container, #mockup .modal-leave-active .modal-container {
+#mockup .modal-enter .modal-container,
+#mockup .modal-leave-active .modal-container {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
@@ -3255,8 +3739,8 @@ left: 5px;  */
 }
 
 #mockup .modal-container {
-	/* width: 80%;
-	height: 75%; */
+	width: 80%;
+	/* height: 75%; */
 	margin: 0px auto;
 	padding: 0px;
 	background-color: #fff;
@@ -3276,9 +3760,8 @@ left: 5px;  */
 	color: #000000;
 	padding-bottom: 0 !important;
 	left: 1em;
-	margin: 0 auto;
-	position: relativee;
-	padding-left: 1em;
+	margin: 10px auto 0;
+	position: absolute;
 }
 
 #mockup .modal-header .filter {
@@ -3355,7 +3838,8 @@ left: 5px;  */
 	opacity: 0;
 }
 
-#mockup .modal-enter .modal-container, #mockup .modal-leave-active .modal-container {
+#mockup .modal-enter .modal-container,
+#mockup .modal-leave-active .modal-container {
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
@@ -3389,10 +3873,9 @@ left: 5px;  */
 	border: none;
 	display: none;
 	height: 35px;
-	margin: auto;
+	margin: 0;
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	top: 1em !important;
 	right: 20px;
 	width: 35px;
 	z-index: 9999;
@@ -3458,14 +3941,16 @@ left: 5px;  */
 	bottom: 5px;
 }
 
-#mockup .hamburger.is-closed .hamb-top, #mockup .hamburger.is-closed .hamb-middle, #mockup .hamburger.is-closed .hamb-bottom, #mockup .hamburger.is-open .hamb-top, #mockup .hamburger.is-open .hamb-middle, #mockup .hamburger.is-open .hamb-bottom {
+#mockup .hamburger.is-closed .hamb-top,
+#mockup .hamburger.is-closed .hamb-middle,
+#mockup .hamburger.is-closed .hamb-bottom,
+#mockup .hamburger.is-open .hamb-top,
+#mockup .hamburger.is-open .hamb-middle,
+#mockup .hamburger.is-open .hamb-bottom {
 	height: 4px;
-	left: 0;
 	right: 0;
 	position: absolute;
 	width: 80%;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 #mockup .hamburger.is-open .hamb-top {
@@ -3521,6 +4006,7 @@ left: 5px;  */
 	#mockup .mainLogo {
 		max-width: 380px;
 	}
+
 	#mockup .mainLogo {
 		max-width: 250px;
 	}
@@ -3529,8 +4015,9 @@ left: 5px;  */
 @media (min-width: 768px) {
 	#mockup .navbar-right {
 		float: right !important;
-		margin-right: 1.5%;
+		margin-right: 10px;
 	}
+
 	#mockup .navbar-nav>li {
 		float: left;
 		margin-bottom: 0;
@@ -3541,6 +4028,7 @@ left: 5px;  */
 		-o-transition: all 0.4s ease-in-out;
 		transition: all 0.4s ease-in-out; */
 	}
+
 	#mockup .navbar-nav>li>a {
 		position: relative;
 		padding: 15px;
@@ -3562,16 +4050,21 @@ left: 5px;  */
 		-webkit-transform: skew(30deg);
 		transform: skew(30deg);
 	}
-	#mockup .navbar-nav>li:hover, #mockup .navbar-nav>li.focus {
+
+	#mockup .navbar-nav>li:hover,
+	#mockup .navbar-nav>li.focus {
 		background-color: #000000;
 	}
+
 	#mockup .navbar-nav>li>a {
 		text-decoration: none !important;
 	}
+
 	#mockup .navbar-nav>li>a:hover {
 		color: #ffffff !important;
 		text-decoration: none !important;
 	}
+
 	#mockup .navbar-nav>li.button-primary>a {
 		padding: 15px 25px;
 		color: #ffffff !important;
@@ -3581,13 +4074,13 @@ left: 5px;  */
 		-o-transition: all 0.4s ease-in-out;
 		transition: all 0.4s ease-in-out; */
 	}
+
 	#mockup .navbar-nav>li.button-primary:not(.parallelogram)>a:hover {
 		color: #e00122 !important;
 	}
-	/* #mockup .navbar-nav>li.search {
-		padding-left: 10px;
-	} */
-	#mockup .fa-search:before, #mockup .searchIcon {
+
+	#mockup .fa-search:before,
+	#mockup .searchIcon {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 		-webkit-transform: skew(30deg);
@@ -3600,37 +4093,51 @@ left: 5px;  */
 		left: 15px;
 		text-align: center;
 	}
+
 	#mockup.home .fa-search:before {
 		right: 0;
 		left: 0;
 	}
+
 	#mockup.home .fa-search {
 		padding: 0;
 		background-color: #e00122;
 	}
+
 	#mockup.home .fa-search:before {
 		-webkit-transform: skew(0deg);
 		transform: skew(0deg);
 		line-height: 39px;
 		color: #fff;
 	}
-	#mockup .fa-search:hover:before, #mockup .fa-search.focus:before, #mockup .searchIcon {
+
+	#mockup .fa-search:hover:before,
+	#mockup .fa-search.focus:before,
+	#mockup .searchIcon {
 		color: #fff;
 	}
+
 	#mockup .fa-home>a {
 		-webkit-transform: skew(0deg) !important;
 		transform: skew(0deg) !important;
 	}
+
 	#mockup .fa-home:hover:before {
 		color: #fff;
 	}
+
 	#mockup .navbar-header {
 		float: left;
 	}
-	#mockup .container>.navbar-header, #mockup .container-fluid>.navbar-header, #mockup .container>.navbar-collapse, #mockup .container-fluid>.navbar-collapse {
+
+	#mockup .container>.navbar-header,
+	#mockup .container-fluid>.navbar-header,
+	#mockup .container>.navbar-collapse,
+	#mockup .container-fluid>.navbar-collapse {
 		margin-right: 0;
 		margin-left: 0;
 	}
+
 	#mockup .pull-left {
 		float: left !important;
 	}
@@ -3650,7 +4157,6 @@ left: 5px;  */
 @media (min-width: 1024px) {
 	#mockup header>.container {
 		width: 1024px;
-		padding: 10px 0;
 	}
 }
 
@@ -3661,19 +4167,25 @@ left: 5px;  */
 }
 
 @media (min-width: 1031px) {
-	ul.nav>li:hover ul li, ul.nav>li.focus ul li {
+
+	ul.nav>li:hover ul li,
+	ul.nav>li.focus ul li {
 		height: 36px !important;
 		border-bottom: 1px solid #000;
 	}
-	ul.nav>li:hover ul li:last-child, ul.nav>li.focus ul li:last-child {
+
+	ul.nav>li:hover ul li:last-child,
+	ul.nav>li.focus ul li:last-child {
 		border-bottom: 1px solid #000;
 	}
+
 	.nav>li>ul {
 		position: absolute;
 		left: 0;
 		top: 36px;
 		z-index: 1;
 	}
+
 	.nav li>ul>li {
 		overflow: hidden;
 		height: 0;
@@ -3689,9 +4201,13 @@ left: 5px;  */
 		top: 0;
 		right: 10%;
 	}
+
 	#mockup .mobile-nav li {
+		-webkit-transform: skew(-30deg);
+		transform: skew(-30deg);
 		background-color: #e00122;
 	}
+
 	#mockup .mobile-nav li a {
 		color: #fff;
 		text-decoration: none;
@@ -3700,67 +4216,92 @@ left: 5px;  */
 		font-weight: bold;
 		font-family: "Open Sans", sans-serif !important;
 		font-weight: 300;
+		font-style: italic;
+		-webkit-transform: skew(30deg);
+		transform: skew(30deg);
 		padding: 0.5em 1em;
 	}
 }
 
 @media (max-width: 1030px) {
+	/*
 	#mockup.internal header {
 		padding: 2em 0 0.5em !important;
 	}
+	*/
+
 	/* #mockup.internal>section#pageTitle .page-title */
 	#mockup.give-to-uc>section#pageTitle .page-title {
 		padding-top: 65px !important;
 	}
+
 	#mockup.internal>section#pageTitle .page-title {
 		padding-top: 0.5em !important;
 	}
+
 	#mockup .hamburger {
 		display: block !important;
+		top: 1em !important;
 	}
+
+	#mockup .hamburger.reduced {
+		top: 1em;
+	}
+
 	#mockup.internal header.reduced {
 		padding: 0.5em 0 !important;
 	}
+
 	#mockup .container.navContainer {
 		width: 100%;
 		max-width: 100%;
 		margin-bottom: 0 !important;
-		padding: 10px 0;
+		padding: 0;
 	}
+
 	#mockup .pageTitle.parallelogram {
 		-webkit-transform: skew(-30deg);
 		transform: skew(-30deg);
 	}
+
 	#mockup .skew-fix {
 		display: inline-block;
 		-webkit-transform: skew(30deg);
 		transform: skew(30deg);
 	}
+
 	#mockup header .container>div {
 		margin-left: 20px;
 	}
+
 	#mockup .mobile-nav {
 		display: block !important;
-    	margin-top: 0;
-    	position: absolute;
-    	top: 0;
-    	bottom: 0;
-    	right: 10%;
-    	height: 45px;
-    	margin: auto;
+		margin-top: .75em;
+		position: absolute;
+		top: 0;
+		right: 10%;
 	}
+
 	#mockup .mobile-nav li {
+		-webkit-transform: skew(-30deg);
+		transform: skew(-30deg);
 		background-color: #e00122;
 	}
+
 	#mockup .mobile-nav li a {
+		-webkit-transform: skew(30deg);
+		transform: skew(30deg);
 		padding: 0.4em 1em;
 	}
+
 	#mockup header {
 		background-color: #fff;
 	}
+
 	#mockup header a {
 		margin: 0 auto;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right {
 		position: absolute;
 		background-color: #000000;
@@ -3775,11 +4316,13 @@ left: 5px;  */
 		-o-transition: all 0.4s ease-in-out;
 		transition: all 0.4s ease-in-out; */
 	}
+
 	#mockup .nav.navbar-nav.navbar-right.slideOut {
 		border-top: 1px solid #000;
 		left: 0;
 		right: 0;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li {
 		display: inline-block;
 		line-height: 20px;
@@ -3793,23 +4336,29 @@ left: 5px;  */
 		transform: skew(0deg);
 		background-color: #fff;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li a:hover {
 		background-color: #000;
 		color: #fff !important;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li.selected {
 		background-color: #000;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li.selected a {
 		color: #fff;
 	}
+
 	#mockup .fa-home:before {
 		-webkit-transform: skew(0deg);
 		transform: skew(0deg);
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li.search {
 		display: none;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li a {
 		/* color: #dddddd; */
 		color: #000 !important;
@@ -3820,12 +4369,15 @@ left: 5px;  */
 		-webkit-transform: skew(0deg);
 		transform: skew(0deg);
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li a.open {
 		color: #fff !important;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li.button-primary a {
 		color: #fff !important;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li a>span {
 		width: 50px;
 		height: 50px;
@@ -3836,10 +4388,12 @@ left: 5px;  */
 		cursor: pointer;
 		z-index: 50;
 	}
+
 	#mockup .fa-chevron-up:before {
 		font-family: "FontAwesome";
 		color: #fff;
 	}
+
 	#mockup span>i.fa.fa-chevron-up {
 		position: absolute;
 		top: 0;
@@ -3855,6 +4409,7 @@ left: 5px;  */
 		-webkit-transition: all 0.4s linear;
 		transition: all 0.4s linear;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li .nccUlMenuSub1 {
 		display: none;
 		position: relative;
@@ -3870,21 +4425,27 @@ left: 5px;  */
 		-ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
 		zoom: 1;
 	}
+
 	#mockup .nav.navbar-nav.navbar-right li .nccUlMenuSub1 li {
 		background-color: #DCDCDC;
 		vertical-align: top;
 	}
+
 	#mockup header .nav .nccUlMenuSub1 a {
 		line-height: 40px;
 		height: 40px;
 		padding: 0 10px !important;
 	}
+
 	#mockup header a>img {
 		max-width: 250px !important;
 	}
-	#mockup header, #mockup.internal header {
+
+	#mockup header,
+	#mockup.internal header {
 		padding: 0 !important;
 	}
+
 	#mockup .parent:before {
 		font-size: 18px;
 		float: right;
@@ -3899,35 +4460,45 @@ left: 5px;  */
 		text-align: center;
 		cursor: pointer;
 	}
+
 	#mockup ul.nav ul {
 		padding: 0;
 		display: none;
 	}
+
 	#mockup .container {
 		width: 100%;
 		margin-bottom: 0.5em;
 	}
+
 	#mockup .search-container>.container {
 		width: 100%;
 		margin-bottom: 0;
 	}
+
 	/* #mockup .nav.navbar-nav.navbar-right {
 		height: 91vh;
 	} */
 	#mockup section.manifesto {
 		padding: 2em 0;
 	}
+
 	#mockup section.manifesto p {
 		font-size: 1.5em;
 		margin: 0;
 	}
+
 	#mockup section.manifesto h2 {
 		padding: 0;
 	}
-	#mockup.internal .page-title .container, #mockup.give-to-uc .page-title .container {
+
+	#mockup.internal .page-title .container,
+	#mockup.give-to-uc .page-title .container {
 		padding: 20px 0 0 !important;
 	}
-	#mockup.internal section .container, #mockup.give-to-uc>section>.container {
+
+	#mockup.internal section .container,
+	#mockup.give-to-uc>section>.container {
 		padding: 1em 0 !important;
 	}
 }
@@ -3936,12 +4507,14 @@ left: 5px;  */
 	#mockup header .container>div {
 		margin-left: 0;
 	}
+
 	#mockup .mobile-nav {
 		width: 100% !important;
 		display: block;
 		top: unset;
 		right: unset;
 	}
+
 	#mockup .mobile-nav li {
 		background-color: #e00122;
 		width: 80%;
@@ -3950,6 +4523,7 @@ left: 5px;  */
 		-webkit-transform: skew(0deg);
 		transform: skew(0deg)
 	}
+
 	#mockup .mobile-nav li a {
 		padding: 0.25em !important;
 		width: 100% !important;
@@ -3957,86 +4531,119 @@ left: 5px;  */
 		-webkit-transform: skew(0deg);
 		transform: skew(0deg)
 	}
+
 	#mockup .hamburger {
 		top: .5em;
 	}
-	#mockup .hamburger.is-closed .hamb-top, #mockup .hamburger.is-closed .hamb-middle, #mockup .hamburger.is-closed .hamb-bottom, #mockup .hamburger.is-open .hamb-top, #mockup .hamburger.is-open .hamb-middle, #mockup .hamburger.is-open .hamb-bottom {
+
+	#mockup .hamburger.is-closed .hamb-top,
+	#mockup .hamburger.is-closed .hamb-middle,
+	#mockup .hamburger.is-closed .hamb-bottom,
+	#mockup .hamburger.is-open .hamb-top,
+	#mockup .hamburger.is-open .hamb-middle,
+	#mockup .hamburger.is-open .hamb-bottom {
 		width: 70%;
 	}
+
 	#mockup header a>img {
 		max-width: 190px !important;
 	}
-	#mockup.internal section .container, #mockup.give-to-uc>section>.container {
+
+	#mockup.internal section .container,
+	#mockup.give-to-uc>section>.container {
 		padding: 0.5em 0 !important;
 	}
+
 	#mockup.give-to-uc>section#pageTitle .page-title {
 		padding-top: 60px !important;
 	}
-	#mockup.internal .page-title>.container:before, #mockup.give-to-uc .page-title>.container:before {
+
+	#mockup.internal .page-title>.container:before,
+	#mockup.give-to-uc .page-title>.container:before {
 		height: 48px !important;
 		bottom: 3px !important;
 	}
-	#mockup.internal #pageTitle .page-title, #mockup.give-to-uc #pageTitle .page-title {
+
+	#mockup.internal #pageTitle .page-title,
+	#mockup.give-to-uc #pageTitle .page-title {
 		font-size: 3.0rem;
 	}
-	#mockup.internal .page-title .container, #mockup.give-to-uc .page-title .container {
+
+	#mockup.internal .page-title .container,
+	#mockup.give-to-uc .page-title .container {
 		margin-bottom: 0 !important;
 	}
 }
 
 @media (max-width: 768px) {
+	/*
 	#mockup.internal header {
 		padding: 0.75em 0 !important;
 	}
+	*/
+
 	#mockup .hero .btn-container a {
 		width: 60%;
 		margin: 10px auto;
 	}
+
 	#mockup section.hero .btn-container:after {
 		background-color: transparent !important;
 	}
+
 	#mockup a.scrollToTop {
 		height: 40px !important;
 		width: 40px !important;
 		right: 20px;
 		bottom: 20px;
 	}
+
 	#mockup a.scrollToTop span {
 		border-left: 15px solid transparent;
 		border-right: 15px solid transparent;
 		border-bottom: 25px solid #fff;
 	}
+
 	#mockup section.section-content-container {
 		padding: 2em 0;
 	}
+
 	#mockup footer {
 		padding: 2em 0 3em !important;
 	}
+
 	#mockup footer img {
 		display: block;
 		margin: 0 auto;
 	}
+
 	#mockup footer ul {
 		padding-left: 0 !important;
 		padding-bottom: 0.5em;
 		padding-top: 0.5em;
 	}
+
 	#mockup footer .column {
 		padding: 0 !important;
 	}
+
 	#mockup footer p {
 		color: #ffffff;
 	}
+
 	#mockup footer h5 {
 		text-transform: uppercase;
 		padding-bottom: 0;
 	}
+
 	#mockup footer ul li {
 		margin-bottom: 0.25em;
 	}
+
 	#mockup footer a {
 		text-decoration: underline;
 	}
+
 	#mockup .BBFormTable.SearchFormTable tbody tr td table tbody tr td:last-child {
 		width: 30%;
 	}
@@ -4052,25 +4659,31 @@ left: 5px;  */
 	#mockup section>.container {
 		width: 100%;
 	}
+
 	#mockup .section-container .one-half.column {
 		width: 100% !important;
 		padding: 0 !important;
 	}
+
 	#mockup .section-container .container {
 		padding: 0;
 	}
+
 	#mockup section#nextNowSection .next-now-logo {
 		width: 65%;
 		display: block;
 		margin: 0 auto;
 	}
+
 	#mockup section#nextNowSection .absolute-center {
 		width: 100%;
 		height: auto;
 	}
+
 	#mockup .modal-wrapper {
 		vertical-align: top;
 	}
+
 	.modal-mask {
 		position: fixed !important;
 		z-index: 2000 !important;
@@ -4088,6 +4701,7 @@ left: 5px;  */
 		display: flex !important;
 		transition: opacity .3s ease;
 	}
+
 	.modal-wrapper {
 		display: -webkit-box !important;
 		display: -moz-box !important;
@@ -4099,6 +4713,7 @@ left: 5px;  */
 		padding: 0 !important;
 		width: 100% !important;
 	}
+
 	.modal-container {
 		width: 300px;
 		background-color: #ffffff !important;
@@ -4114,18 +4729,23 @@ left: 5px;  */
 		box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
 		transition: all .3s ease;
 	}
+
 	.modal-header h3 {
 		margin-top: 0;
 	}
+
 	.modal-body {
 		margin: 20px 0;
 	}
+
 	.modal-default-button {
 		float: right;
 	}
+
 	#mockup #nextNowSection .u-text-center.p-5 {
 		padding: 3em 0 !important;
 	}
+
 	#mockup #nextNowSection .u-text-center.p-5>div {
 		width: 95% !important;
 	}
@@ -4141,6 +4761,7 @@ left: 5px;  */
 	#mockup .modal-container {
 		width: 100% !important;
 	}
+
 	#mockup .container {
 		width: 95%;
 		max-width: 95%;
@@ -4172,11 +4793,13 @@ div[id*="_designPaneCloak"] {
 	left: 0px !important;
 }
 
-div[id*="_DesignPanePanel"] .container, footer>div[id*="_updContentPanel"] {
+div[id*="_DesignPanePanel"] .container,
+footer>div[id*="_updContentPanel"] {
 	width: 100% !important;
 }
 
-iframe #mainHeader.sticky, #tinymce header {
+iframe #mainHeader.sticky,
+#tinymce header {
 	overflow: visible !important;
 	position: relative !important;
 }
@@ -4211,7 +4834,7 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 }
 
 #pane5_updContentPanel.BBUpdatePanelDoNotBlock {
-	min-height: 250px;
+	height: 250px;
 }
 
 @media (min-width: 550px) {
@@ -4248,17 +4871,15 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	width: 100% !important;
 }
 
-#mockup.internal .page-title, #mockup.give-to-uc .page-title {
+#mockup.internal .page-title,
+#mockup.give-to-uc .page-title {
 	position: relative;
 	overflow: hidden;
 	background-color: #ddd;
 }
 
-.internal section .container p img {
-	max-width: 100%;
-}
-
-#mockup.internal h1.pageTitle:before, #mockup.give-to-uc h1.pageTitle:before {
+#mockup.internal h1.pageTitle:before,
+#mockup.give-to-uc h1.pageTitle:before {
 	position: absolute;
 	-ms-transform: translate(-50%, 0);
 	/* IE 9 */
@@ -4290,7 +4911,8 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	padding-top: 0px;
 }
 
-#mockup.internal section .container, #mockup.give-to-uc>section>.container {
+#mockup.internal section .container,
+#mockup.give-to-uc>section>.container {
 	padding: 2em 0;
 }
 
@@ -4304,7 +4926,12 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 
 #mockup.internal header {
 	background-color: #fff;
-	padding: 1em 0;
+	padding: 0;
+}
+
+#mockup header {
+	background-color: #fff;
+	padding: 0;
 }
 
 #mockup.give-to-uc header {
@@ -4314,11 +4941,11 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
 }
 
-#mockup.internal section .page-title:before, #mockup.give-to-uc section .page-title:before {
+#mockup.internal section .page-title:before,
+#mockup.give-to-uc section .page-title:before {
 	position: absolute;
 	z-index: 1;
 	width: 60%;
-	bottom: 0;
 	right: -20%;
 	content: "";
 	height: 100px;
@@ -4328,18 +4955,29 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	background-repeat: no-repeat;
 }
 
+#mockup.internal .container>h2:first-child {
+	color: #e00122;
+	font-weight: bold;
+	margin: 0;
+	font-family: "rift", sans-serif !important;
+	font-weight: 300;
+	font-style: italic;
+}
+
 /*------------------------------------*\
   #ACCORDION
 \*------------------------------------*/
 
-.accordion-enter-active, .accordion-leave-active {
+.accordion-enter-active,
+.accordion-leave-active {
 	will-change: height, opacity;
 	-webkit-transition: height 0.3s ease, opacity 0.3s ease;
 	transition: height 0.3s ease, opacity 0.3s ease;
 	overflow: hidden;
 }
 
-.accordion-enter, .accordion-leave-to {
+.accordion-enter,
+.accordion-leave-to {
 	height: 0 !important;
 	opacity: 0;
 }
@@ -4399,7 +5037,8 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	transition: all 0.4s ease-in-out;
 }
 
-#mockup .accordion__panel-title:hover, #mockup .accordion__panel-title.open {
+#mockup .accordion__panel-title:hover,
+#mockup .accordion__panel-title.open {
 	background: #e00122;
 }
 
@@ -4499,7 +5138,9 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	width: 0;
 }
 
-.accordion__trigger:hover:after, .accordion__trigger:focus:after, .accordion__trigger[aria-expanded="true"]:after {
+.accordion__trigger:hover:after,
+.accordion__trigger:focus:after,
+.accordion__trigger[aria-expanded="true"]:after {
 	border-top-color: #fff;
 }
 
@@ -4519,7 +5160,8 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 }
 */
 
-.accordion__trigger:hover, .accordion__trigger:focus {
+.accordion__trigger:hover,
+.accordion__trigger:focus {
 	background-color: #000;
 	/* #0e3b5e; */
 	color: #fff;
@@ -4584,10 +5226,7 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	display: -ms-flexbox;
 	display: flex;
 	cursor: pointer;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 5px;
-	border: none;
+	margin-bottom: 15px;
 }
 
 #mockup #videoPlayer .thumbnail:nth-child(even) {
@@ -4604,7 +5243,7 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 }
 
 #mockup #videoPlayer .thumbnail-info {
-	margin-left: 10px;
+	margin-left: 20px;
 	width: 65%;
 }
 
@@ -4612,7 +5251,8 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	font-size: 16px;
 }
 
-#mockup #videoPlayer h3, #mockup #videoPlayer p {
+#mockup #videoPlayer h3,
+#mockup #videoPlayer p {
 	margin: 0;
 	padding: 0;
 }
@@ -4620,6 +5260,10 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 #mockup #videoPlayer h3 {
 	padding-top: 5px;
 	padding-right: 5px;
+}
+
+#mockup #videoPlayer p {
+	line-height: 38px;
 }
 
 #mockup #videoPlayer .thumbnail-views {
@@ -4636,7 +5280,7 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 }
 
 #mockup #videoPlayer .video-container {
-	margin-right: 10px;
+	margin-right: 40px;
 	-webkit-flex-basis: 60%;
 	-ms-flex-preferred-size: 60%;
 	flex-basis: 60%;
@@ -4666,15 +5310,13 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	margin: 0 10px !important;
 }
 
-#mockup #videoPlayer .thumbnail:hover, #mockup #videoPlayer .thumbnail.active {
+#mockup #videoPlayer .thumbnail:hover,
+#mockup #videoPlayer .thumbnail.active {
 	background-color: #000;
 }
 
-#mockup #videoPlayer .thumbnail.active p, #mockup #videoPlayer .thumbnail:hover p {
-	color: #fff;
-}
-
-#mockup #videoPlayer .thumbnail:hover h3, #mockup #videoPlayer .thumbnail.active h3 {
+#mockup #videoPlayer .thumbnail:hover h3,
+#mockup #videoPlayer .thumbnail.active h3 {
 	color: #fff;
 }
 
@@ -4796,7 +5438,9 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 
 /* test form styles */
 
-#mockup input[type='text'], #mockup textarea, #mockup select {
+#mockup input[type='text'],
+#mockup textarea,
+#mockup select {
 	width: 100%;
 }
 
@@ -4952,7 +5596,8 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	font-size: 1.5em;
 }
 
-#mockup .btn-donate, #mockup button {
+#mockup .btn-donate,
+#mockup button {
 	font-size: 1em;
 	line-height: 1em;
 }
@@ -4980,7 +5625,8 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	border-radius: 2em !important;
 }
 
-.select select:hover, .select select:focus {
+.select select:hover,
+.select select:focus {
 	color: #464646;
 	background: #f4f4f4;
 }
@@ -4990,7 +5636,8 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	pointer-events: none;
 }
 
-.select select:hover~.select__arrow, .select select:focus~.select__arrow {
+.select select:hover~.select__arrow,
+.select select:focus~.select__arrow {
 	border-top-color: #464646;
 }
 
@@ -5010,7 +5657,9 @@ div[title^="1:"].DesignerPanePanelEmpty:after {
 	border-color: #e00122 transparent transparent;
 }
 
-#mockup .button-disabled, #mockup button[disabled], #mockup :disabled {
+#mockup .button-disabled,
+#mockup button[disabled],
+#mockup :disabled {
 	background-color: #888b8d;
 	border: 3px solid #888b8d;
 	pointer-events: none;
@@ -5145,7 +5794,8 @@ a.not-active {
 	text-align: center;
 }
 
-#mockup #areasToSuppportRadioGroup .radio-list>input, #mockup #areasToSuppportRadioGroup .radio-list>label {
+#mockup #areasToSuppportRadioGroup .radio-list>input,
+#mockup #areasToSuppportRadioGroup .radio-list>label {
 	width: 24%;
 }
 
@@ -5156,12 +5806,14 @@ a.not-active {
 	border: 1px solid #ccc;
 }
 
-#mockup .BBDonationApiContainer input[type="radio"]:checked+label:not(.otherAmountLabel), #mockup .BBDonationApiContainer .radio-list label:hover {
+#mockup .BBDonationApiContainer input[type="radio"]:checked+label:not(.otherAmountLabel),
+#mockup .BBDonationApiContainer .radio-list label:hover {
 	background-color: #e00122;
 	color: #fff;
 }
 
-#mockup .btn-donate, #mockup button {
+#mockup .btn-donate,
+#mockup button {
 	font-size: 1em;
 	/* line-height: 38px; */
 }
@@ -5189,7 +5841,8 @@ a.not-active {
 	border-radius: 2em !important;
 }
 
-#mockup .select select:hover, #mockup .select select:focus {
+#mockup .select select:hover,
+#mockup .select select:focus {
 	color: #464646;
 	background: #f4f4f4;
 }
@@ -5199,7 +5852,8 @@ a.not-active {
 	pointer-events: none;
 }
 
-#mockup .select select:hover~.select__arrow, #mockup .select select:focus~.select__arrow {
+#mockup .select select:hover~.select__arrow,
+#mockup .select select:focus~.select__arrow {
 	border-top-color: #464646;
 }
 
@@ -5219,7 +5873,10 @@ a.not-active {
 	border-color: #e00122 transparent transparent;
 }
 
-#mockup .button-disabled, #mockup button[disabled], #mockup :disabled, #mockup a.not-active {
+#mockup .button-disabled,
+#mockup button[disabled],
+#mockup :disabled,
+#mockup a.not-active {
 	cursor: not-allowed;
 	background-color: #888b8d;
 	border: none;
@@ -5263,7 +5920,9 @@ a.not-active {
 	opacity: .65;
 }
 
-#mockup #adfTabsMenu.giftTypeSet li, #mockup #adfTabsMenu.giftTypeSet li a, #mockup .giftTypeSet span.r-pill__item {
+#mockup #adfTabsMenu.giftTypeSet li,
+#mockup #adfTabsMenu.giftTypeSet li a,
+#mockup .giftTypeSet span.r-pill__item {
 	pointer-events: none;
 	cursor: default;
 }
@@ -5279,7 +5938,8 @@ a.not-active {
 	border-radius: 4px;
 }
 
-#mockup [type='checkbox'], #mockup [type='radio'] {
+#mockup [type='checkbox'],
+#mockup [type='radio'] {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	/* 1 */
@@ -5319,18 +5979,23 @@ a.not-active {
 	padding: 0 0.1em 0 2em;
 }
 
-#mockup .BBDonationApiContainer .checkbox .select-section label:not(.required), #mockup .BBDonationApiContainer label.not-required {
+#mockup .BBDonationApiContainer .checkbox .select-section label:not(.required),
+#mockup .BBDonationApiContainer label.not-required {
 	position: relative;
 	padding: 0 0.1em 0.5em 0 !important;
 }
 
-#mockup .BBDonationApiContainer .checkbox label:not(.required)::before, #mockup .BBDonationApiContainer .checkbox label:not(.required)::after {
+#mockup .BBDonationApiContainer .checkbox label:not(.required)::before,
+#mockup .BBDonationApiContainer .checkbox label:not(.required)::after {
 	position: absolute;
 	content: '';
 	display: inline-block;
 }
 
-#mockup .BBDonationApiContainer .checkbox .select-section>label::before, #mockup .BBDonationApiContainer .checkbox .select-section>label::after, #mockup .BBDonationApiContainer .checkbox label.not-required::before, #mockup .BBDonationApiContainer .checkbox label.not-required::after {
+#mockup .BBDonationApiContainer .checkbox .select-section>label::before,
+#mockup .BBDonationApiContainer .checkbox .select-section>label::after,
+#mockup .BBDonationApiContainer .checkbox label.not-required::before,
+#mockup .BBDonationApiContainer .checkbox label.not-required::after {
 	display: none;
 }
 
@@ -5376,23 +6041,20 @@ a.not-active {
 	width: 40%;
 }
 
-#mockup .amountButton a {
-	border: 1px solid #ccc !important;
-	padding: .75em !important;
-}
-
-#mockup .amountButton a, #mockup .amountButton input {
+#mockup .amountButton a,
+#mockup .amountButton input {
 	width: 90%;
 	margin: 0 auto;
 	float: none;
-	display: block;
 }
 
-#mockup .amountButton a, #mockup #adfOtherLabel {
+#mockup .amountButton a,
+#mockup #adfOtherLabel {
 	border-color: #ccc;
 }
 
-#mockup .amounts ul, #mockup #adfTabsMenu .menu {
+#mockup .amounts ul,
+#mockup #adfTabsMenu .menu {
 	text-align: center;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -5423,7 +6085,8 @@ a.not-active {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
 
-#mockup .tt-menu, #mockup .gist {
+#mockup .tt-menu,
+#mockup .gist {
 	text-align: left;
 }
 
@@ -5530,7 +6193,8 @@ a.not-active {
 	margin-bottom: 0.5em;
 }
 
-#mockup #adfTabsMenu, #mockup #adfTabsMenu .menu {
+#mockup #adfTabsMenu,
+#mockup #adfTabsMenu .menu {
 	width: 100%;
 	text-align: center;
 }
@@ -5652,7 +6316,8 @@ a.not-active {
 	text-align: center;
 }
 
-#mockup .adfButtonList a.selected, #mockup .adfButtonList a:hover {
+#mockup .adfButtonList a.selected,
+#mockup .adfButtonList a:hover {
 	color: #fff !important;
 }
 
@@ -5732,26 +6397,33 @@ a.not-active {
 	#mockup.give-to-uc header {
 		padding: 0.75em 0;
 	}
+
 	#mockup.give-to-uc div#adfOtherLabel {
 		min-width: 123px;
 		margin: 0;
 	}
+
 	#mockup .adfButtonList a {
 		margin: 0 0.4em 0 0;
 	}
+
 	#mockup .adfButtonList li:last-child a {
 		margin: 0 0.1em 0 0;
 	}
+
 	#mockup #advancedDonationFormRedesign .radio-list.areaToggleGroup label {
 		display: inline-block;
 		width: 95%;
 		text-align: center;
 		border: 1px solid #ccc;
 	}
+
 	#mockup .checkbox-container.checkbox.row>label {
 		width: 33%;
 	}
-	#mockup .amountButton a, #mockup .amountButton input {
+
+	#mockup .amountButton a,
+	#mockup .amountButton input {
 		width: 95% !important;
 	}
 }
@@ -5761,72 +6433,102 @@ a.not-active {
 		margin-top: 4px;
 		max-width: 215px !important;
 	}
+
 	#mockup header nav>div {
 		margin-left: 10px !important;
 	}
+
 	#mockup fieldset {
 		padding: 1rem 1.5rem;
 	}
-	#mockup input, #mockup textarea, #mockup select, #mockup fieldset {
+
+	#mockup input,
+	#mockup textarea,
+	#mockup select,
+	#mockup fieldset {
 		margin-bottom: .5rem;
 	}
-	#mockup .button, #mockup button, #mockup input[type="submit"], #mockup input[type="reset"], #mockup input[type="button"] {
+
+	#mockup .button,
+	#mockup button,
+	#mockup input[type="submit"],
+	#mockup input[type="reset"],
+	#mockup input[type="button"] {
 		padding: 0 15px;
 	}
-	#mockup .amounts ul, #mockup #adfTabsMenu .menu {
+
+	#mockup .amounts ul,
+	#mockup #adfTabsMenu .menu {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
+
 	#mockup .text-container {
 		padding: 0.5em;
 	}
+
 	#mockup #adfTabsMenu .menu li {
 		width: 100%;
 		margin: 0 0 5px 0;
 		display: block;
 	}
+
 	#mockup #adfTabsMenu .menu li:last-child {
 		margin: 0;
 	}
+
 	#mockup #adfTabsMenu .menu li a {
 		margin: 0;
 	}
+
 	#mockup .amountButton {
 		width: 50%;
 	}
+
 	#mockup .amounts ul li:nth-child(even) * {
 		float: right;
 		margin-right: 0;
 	}
+
 	#mockup .adfButtonList {
 		margin: 0;
 	}
-	#mockup .amountButton a, #mockup .amountButton input {
+
+	#mockup .amountButton a,
+	#mockup .amountButton input {
 		width: 95% !important;
 	}
+
 	#mockup #advancedDonationFormRedesign .radio-list label {
 		display: block;
 		width: 100%;
 	}
+
 	#mockup .checkbox-container.checkbox.row>label {
 		width: 100%;
 		margin-bottom: 5px;
 	}
+
 	#mockup .checkbox input[type='checkbox'] {
 		opacity: 0;
 		position: absolute;
 		left: 0;
 	}
+
 	#mockup #ackCheckDetails .one-third {
 		width: 100% !important;
 	}
+
 	#mockup .validation-icon-container .one-third {
 		text-align: center !important;
 	}
 }
 
-#mockup #advancedDonationForm #recurringAmount>ul, #mockup #advancedDonationForm .adfItemWrapperInner.adfButtonList>ul, #mockup #advancedDonationForm ul.designationButtonWrapper, #mockup .radio-list.areaToggleGroup {
+#mockup #advancedDonationForm #recurringAmount>ul,
+#mockup #advancedDonationForm .adfItemWrapperInner.adfButtonList>ul,
+#mockup #advancedDonationForm ul.designationButtonWrapper,
+#mockup .radio-list.areaToggleGroup {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -5846,11 +6548,14 @@ a.not-active {
 	height: 100%;
 }
 
-#mockup #advancedDonationForm #recurringAmount>ul>li, #mockup #advancedDonationForm .adfItemWrapperInner.adfButtonList>ul>li, #mockup #advancedDonationForm ul.designationButtonWrapper>li {
+#mockup #advancedDonationForm #recurringAmount>ul>li,
+#mockup #advancedDonationForm .adfItemWrapperInner.adfButtonList>ul>li,
+#mockup #advancedDonationForm ul.designationButtonWrapper>li {
 	width: 40%;
 }
 
-#mockup #advancedDonationForm #adfOtherLabel, #mockup #advancedDonationForm #txtAmount {
+#mockup #advancedDonationForm #adfOtherLabel,
+#mockup #advancedDonationForm #txtAmount {
 	margin: 0 !important;
 	min-height: 50px !important;
 }
@@ -5862,10 +6567,14 @@ a.not-active {
 }
 
 @media only screen and (min-width: 51em) {
-	#mockup .DonationFormTable>tbody>tr, #mockup .DonationFormTable>tbody>tr>td {
+
+	#mockup .DonationFormTable>tbody>tr,
+	#mockup .DonationFormTable>tbody>tr>td {
 		display: block;
 	}
-	#mockup table.DonationFormTable>tr>td, #mockup table.DonationFormTable td.BBFieldCaption {
+
+	#mockup table.DonationFormTable>tr>td,
+	#mockup table.DonationFormTable td.BBFieldCaption {
 		border: none;
 		padding: 3px 5px !important;
 		float: none;
@@ -5873,13 +6582,16 @@ a.not-active {
 		width: 100% !important;
 		min-width: 100% !important;
 	}
+
 	#mockup table>.donationInfo>tr {
 		display: inline-block !important;
 		padding-right: 1em;
 	}
+
 	#mockup table>.donationInfo>tr>td:first-child {
 		padding-right: 0 !important;
 	}
+
 	#mockup table>.donationInfo>tr>td:last-child {
 		padding-left: 0 !important;
 	}
@@ -5906,6 +6618,7 @@ a.not-active {
 }
 
 @media screen and (max-width: 830px) {
+
 	/* #mockup .radio-list.areaToggleGroup label.single {
 		line-height: 50px !important;
 	} */
@@ -5915,105 +6628,135 @@ a.not-active {
 }
 
 @media screen and (max-width: 767px) {
-	#mockup .amounts ul, #mockup #adfTabsMenu .menu {
+
+	#mockup .amounts ul,
+	#mockup #adfTabsMenu .menu {
 		-webkit-flex-wrap: wrap !important;
 		-ms-flex-wrap: wrap !important;
 		flex-wrap: wrap !important;
 	}
+
 	#mockup .amountButton {
 		width: 50%;
 		padding: 5px 0;
 	}
-	#mockup .amountButton a, #mockup .amountButton input {
+
+	#mockup .amountButton a,
+	#mockup .amountButton input {
 		width: 95% !important;
 		margin: 0 auto;
 	}
+
 	#mockup .amountButton input#txtAmount {
 		margin: 0 auto !important;
 	}
+
 	#mockup #areasToSuppportRadioGroup .radio-list {
 		-webkit-flex-wrap: wrap !important;
 		-ms-flex-wrap: wrap !important;
 		flex-wrap: wrap !important;
 	}
+
 	#mockup .areaToggleGroup label {
 		width: 95%;
 		padding: 5px 0;
 	}
+
 	#mockup #advancedDonationFormRedesign .radio-list.areaToggleGroup label {
 		display: block;
 		width: 95%;
 		margin: 0 auto;
 	}
+
 	#mockup #advancedDonationFormRedesign .radio-list.areaToggleGroup li:last-child label {
 		width: 97.5%;
 	}
+
 	#mockup #adfTabsMenu .menu li {
 		width: 100%;
 	}
+
 	#mockup .radio-list.areaToggleGroup label.single {
 		line-height: auto !important;
 	}
 }
 
 @media screen and (max-width: 450px) {
-	#mockup .amounts ul, #mockup #adfTabsMenu .menu {
+
+	#mockup .amounts ul,
+	#mockup #adfTabsMenu .menu {
 		-webkit-flex-wrap: wrap !important;
 		-ms-flex-wrap: wrap !important;
 		flex-wrap: wrap !important;
 	}
+
 	#mockup .amountButton {
 		width: 100%;
 		padding: 5px 0;
 	}
-	#mockup .amountButton a, #mockup .amountButton input {
+
+	#mockup .amountButton a,
+	#mockup .amountButton input {
 		width: 100% !important;
 		margin: 0 auto;
 	}
+
 	#mockup .amountButton input#txtAmount {
 		margin: 0 auto !important;
 	}
+
 	#mockup #areasToSuppportRadioGroup .radio-list {
 		-webkit-flex-wrap: wrap !important;
 		-ms-flex-wrap: wrap !important;
 		flex-wrap: wrap !important;
 	}
+
 	#mockup .areaToggleGroup label {
 		width: 100%;
 		padding: 5px 0;
 	}
+
 	#mockup #advancedDonationFormRedesign .radio-list.areaToggleGroup label {
 		display: block;
 		width: 100%;
 		margin: 0 auto;
 		line-height: auto !important;
 	}
+
 	#mockup #advancedDonationFormRedesign .radio-list.areaToggleGroup li:last-child label {
 		width: 100%;
 	}
+
 	#mockup ul.radio-list>li.area-item {
 		width: 100% !important;
 		padding: 5px 0 !important;
 	}
+
 	#mockup .u-text-left {
 		text-align: center !important;
 	}
+
 	#mockup .form-button-container button {
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
+
 	#mockup fieldset {
 		padding: .5em !important;
 	}
+
 	#mockup .validation-icon-container {
 		margin: 0 !important;
 	}
+
 	#mockup .validation-icon-container>div {
 		width: 50%;
 	}
+
 	#mockup legend {
 		padding: 0;
 	}
+
 	#mockup .checkbox-container .column {
 		padding: 0 3px;
 	}
@@ -6097,7 +6840,8 @@ table tbody[id*=_DonationCapture1_] tr {
 	margin-right: auto !important;
 }
 
-#mockup header div>a:focus, #mockup header .nccUlMenuSub1>li>a:focus {
+#mockup header div>a:focus,
+#mockup header .nccUlMenuSub1>li>a:focus {
 	outline: none !important;
 	border: 1px solid #4D90FE;
 	-webkit-box-shadow: 0px 0px 5px #4D90FE;
@@ -6129,17 +6873,23 @@ table tbody[id*=_DonationCapture1_] tr {
 	opacity: 0;
 }
 
-#mockup ul.nav .fa.fa-search:hover .searchIcon .cls-1 {
+#mockup ul.nav .search:hover .searchIcon .cls-1 {
 	fill: #fff;
 }
 
 #mockup ul.nav .searchIcon {
-	-webkit-transform: skew(30deg) !important;
-	transform: skew(30deg) !important;
+	-webkit-transform: skew(0deg) !important;
+	transform: skew(0deg) !important;
 }
 
 header .searchIcon {
 	width: 15px !important;
+}
+
+header>.container {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
 }
 
 .taRight.EventAttendeesOverallTotal>hr {
@@ -6189,171 +6939,482 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
 	max-width: 100%;
 	min-width: 100%;
 	width: 100%;
-	height: unset;
+	height: auto;
 }
 
 #news-container>div.clearfix>p>* {
 	font-size: 1.25em !important;
 }
 
-.PaymentPartSummary_Container .fa-shopping-cart {
-	font-size: 2.5em;
-	width: 45px;
-	height: 45px;
+/* Giving Form on new template */
+#heroDonationForm {
+	text-align: right;
+	margin: 0 auto;
+	z-index: 5;
 	position: relative;
-	text-align: center;
 }
 
-.PaymentPartSummary_Container .fa-shopping-cart {
-	font-size: 2.5em;
+#heroDonationForm #miniDonationForm {
+	width: 400px;
+	display: inline-block;
+	background: #fff;
+	margin: 2em 0px;
+	padding: 0.5rem;
+	position: relative;
+	-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
 }
 
-.PaymentPartSummary_Container .fa-shopping-cart>span {
-	position: absolute important;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+#heroDonationForm #miniDonationForm h2 {
+	color: rgb(0, 0, 0);
+	margin: 0px;
+	text-align: center !important;
+}
+
+#heroDonationForm #miniDonationForm hr {
+	margin: 0.75em auto;
+}
+
+#heroDonationForm h4,
+#heroDonationForm h2 {
 	margin: 0;
 }
 
-.PaymentPartSummary_Container span[id$="lblHTMLContent"] p span:last-of-type {
-	position: absolute !important;
-	padding: 0 !important;
-	top: 0;
+#heroDonationForm div[id*='_Content'] {
+	width: 50%;
+	margin: 0 auto;
 }
 
-#PC20165_ctl00_upCartSummary div:last-child {
+#heroDonationForm .miniInputButton {
+	margin-left: 0 !important;
+}
+
+#heroDonationForm #miniDonationOtherLabel {
+	border: 1px solid #ccc;
+	padding: .65rem;
+}
+
+#heroDonationForm input.btnDonAmount,
+#heroDonationForm input.MonthlyDonAmount,
+#heroDonationForm input.PledgeAmount {
+	width: 100% !important;
+	height: 100% !important;
+	text-align: center !important;
+	padding: 13px 0 !important;
+	font-size: 18px !important;
+	line-height: 2 !important;
+	border-radius: 5px !important;
+}
+
+#heroDonationForm .innerMinidonationWrapper>ul {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+}
+
+#heroDonationForm .innerMinidonationWrapper>ul>li {
+	border: 1px solid #e00122;
+	padding: 0;
+}
+
+#heroDonationForm .innerMinidonationWrapper>ul>li>a {
+	text-decoration: none;
+	text-align: center;
+	display: block;
 	width: 100%;
-	right: 0;
-	position: absolute;
+	height: 100%;
+	padding: 10px;
+	font-size: 1.25em;
+	transition: all 0.4s ease-in-out;
 }
 
-.PaymentPartSummary_CartItemUnitPrice {
-	color: #000 !important;
-	font-size: 1.5em !important;
+#heroDonationForm .innerMinidonationWrapper>ul>li>a:hover,
+#heroDonationForm .innerMinidonationWrapper>ul>li>a.selected {
+	background-color: #e00122;
+	color: #fff;
 }
 
-.PaymentPartSummary_CartList {
-	border: 0 !important;
+/* Mini donation form */
+
+#heroDonationForm .edgtf-grid.body-container {
+	margin-bottom: 50px;
 }
 
-.PaymentPartSummary_CartRows:nth-child(odd) {
-	background-color: #DCDCDC;
+#heroDonationForm .edgtf-grid {
+	width: 1300px;
+	margin: 0 auto;
 }
 
-#mockup div[id*=CartGrid_topLinkBar] {
-	margin: 0 !important;
-	max-width: 100%;
+#heroDonationForm .edgtf-grid {
+	max-width: 1200px;
 }
 
-#PC20165_ctl00_upCartSummary>div:last-of-type {
-	width: 500px;
-	right: 0;
-	top: 6em;
-	position: absolute;
-	background-color: #000;
-	-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
-	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
-}
+@media only screen and (max-width: 1440px) {
 
-.PaymentPartSummary_CartSummaryList:after {
-	content: " ";
-	clear: both;
-}
-
-.PaymentPartSummarySubmitButton.PaymentPartSummary_RemoveAllLink {
-	color: #fff !important;
-}
-
-.PaymentPartSummary_CartOptions {
-	padding: 5px !important;
-}
-
-.PaymentPartSummary_CartSummaryList {
-	margin: 0 !important;
-}
-
-#mockup #initiativesTable {
-	width: 35% !important;
-}
-
-@media (max-width: 700px) {
-	#mockup #initiativesTable {
-		width: 100% !important;
+	.edgtf-container-inner,
+	.edgtf-grid,
+	.edgtf-grid-section .edgtf-section-inner,
+	.edgtf-slider .carousel-inner .edgtf-slider-content-outer {
+		width: 1100px;
 	}
 }
 
-/* --------------------------------- *\
- LANDING PAGE
-/* --------------------------------- *\
-
-#mockup #vision .column > img {
-	width: 100% !important; 
-}
-  
-#mockup .vision-content-container {
-    paddding: 0.5em !imprtant;
+@media (min-width: 768px) {
+	#heroDonationForm .col-sm-12 {
+		width: 100%;
+	}
 }
 
-#mockup section .flex {
-	display: flex !important;
+@media (min-width: 768px) {
+
+	#heroDonationForm .col-sm-1,
+	.col-sm-2,
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-10,
+	.col-sm-11,
+	.col-sm-12 {
+		float: left;
+	}
 }
 
-#mockup section .flex > div {
-	width: unset !important;
+#heroDonationForm div.donate-options-container {
+	width: 35%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+	box-shadow: 0 4px 7px 0 rgba(0, 0, 0, .5);
+
+	position: fixed;
+	top: 100px;
+	right: 5%;
+	background-color: #fff;
 }
 
-#mockup h1.site-section-title.white {
-	background-color: #000 !important;
+#heroDonationForm .donate-intro {
+	text-align: center;
+}
+
+#heroDonationForm .row.donate-buttons-row {
+	border-bottom: none !important;
+}
+
+#heroDonationForm .row.donate-buttons-row {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: none !important;
+}
+
+#heroDonationForm .btn-group,
+#heroDonationForm .btn-group-vertical {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#heroDonationForm #single_donations,
+#heroDonationForm #monthly_donations,
+#heroDonationForm #pledge_payment {
+	text-align: center;
+}
+
+#monthly_total,
+#pledge_total,
+#total {
+	display: none;
+}
+
+#heroDonationForm .row.donate-section {
+	text-align: center;
+	clear: both;
+	margin-top: 10px;
+	border-top: none !important;
+}
+
+#heroDonationForm .donate-section .amount-container input:focus {
+	outline: thin dotted;
+}
+
+#heroDonationForm #pledge_payment .donate-section>.amount-container {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: nowrap;
+}
+
+#heroDonationForm #pledge_payment .donate-section>.amount-container>div {
+	width: 50%;
+}
+
+#heroDonationForm .row.dollar-handles {
+	background-color: #f7f5f1;
+	padding-top: 35px;
+}
+
+#heroDonationForm .row.dollar-handles {
+	background-image: url('https://my.cbm.org.au/image/donations/diagonal-noise.png');
+	padding: 5px;
+	text-align: center;
+	/* margin: 0 -16px 10px; */
+	display: flex;
+	-webkit-box-align: start;
+	align-items: flex-start;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+
+#heroDonationForm button#SingleDonation,
+#heroDonationForm button#PledgePayment {
+	background-color: #c4141b !important;
+	border-color: #c4141b;
+	border: 2px solid #c4141b;
+}
+
+#heroDonationForm .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+#heroDonationForm .btn-group>.btn:first-child {
+	margin-left: 0;
+}
+
+#heroDonationForm .btn-group>.btn,
+.btn-group-vertical>.btn {
+	position: relative;
+	float: left;
+}
+
+#heroDonationForm .btn-lg,
+#heroDonationForm .btn-group-lg>.btn {
+	padding: 10px 16px;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 5em;
+}
+
+#heroDonationForm button.greyed {
+	opacity: .45;
+}
+
+#heroDonationForm button#MonthlyDonation {
+	background-color: #c4141b;
+	border-color: #c4141b;
+	border: 2px solid #c4141b;
+}
+
+#heroDonationForm .btn-group>.btn:last-child:not(:first-child),
+#heroDonationForm .btn-group>.dropdown-toggle:not(:first-child) {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+#heroDonationForm .btn-group .btn+.btn,
+#heroDonationForm .btn-group .btn+.btn-group,
+#heroDonationForm .btn-group .btn-group+.btn,
+#heroDonationForm .btn-group .btn-group+.btn-group {
+	margin-left: -1px;
+}
+
+#heroDonationForm span.dollar-sign {
+	font-size: 25px;
+	position: relative;
+	width: auto;
+	font-weight: 700;
+	color: #333 !important;
+	left: 25px;
+	z-index: 99;
+}
+
+#heroDonationForm .dollar-box {
+	width: 23%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 0 0.5%;
+}
+
+#heroDonationForm .dollar-box input[type="button"] {
+	color: #5a5a5a;
+	background: #fff;
+	text-transform: none !important;
+	margin: 0;
+	padding: 0 !important;
+}
+
+#heroDonationForm .dollar-box.active input,
+#heroDonationForm .dollar-box input:hover {
+	background: #c4141b !important;
 	color: #fff !important;
-	margin: 0 !important;
+	border: none !important;
+	box-shadow: none !important;
+	color: #5b5b5b;
 }
 
-#mockup .column p:last-child,
-#mockup .columns p:last-child {
-	margin: 0 !important;
+#heroDonationForm input#amount,
+#heroDonationForm input#monthly_amount,
+#heroDonationForm input#pledge_amount {
+	font-size: 28px;
+	padding: 10px 24px 10px 37px;
+	font-weight: 700;
+	color: #333 !important;
+	width: 20%;
+	min-width: 160px;
+	right: 6px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
 }
 
-#mockup h1, #mockup h2, #mockup h3, #mockup h4, #mockup h5, #mockup h6 {
-	letter-spacing: 0.3px !important;
+#heroDonationForm input#pledge_amount {
+	min-width: 90%;
 }
 
-#mockup .QuickSearchFieldCaption {
-	display: block !important;
+#heroDonationForm textarea,
+#heroDonationForm input[type="text"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #ccc;
 }
 
+#heroDonationForm span.donate-currency {
+	font-size: 22px;
+	position: relative;
+	width: auto;
+	font-weight: 700;
+	color: #c4c4c4 !important;
+	right: 72px;
+	bottom: 3px;
+	display: none;
+}
+
+#heroDonationForm input#monthly_donate_now,
+#heroDonationForm input#pledge_donate_now {
+	text-transform: none !important;
+}
+
+input#pledge_donate_now,
+input#monthly_donate_now,
+input#single_donate_now,
+input#single_donate_btn,
+input#PC806_btnNext,
+input.DonationSubmitButton,
+input.BBSequenceMapNavigationFinishButton,
+input.LoginFormSubmitButton,
+input.ProfileFormSubmitButton {
+	text-transform: none !important;
+	border-color: #c4141b !important;
+	border: 2px solid #c4141b !important;
+	border-radius: 5em !important;
+	display: inline-block;
+	position: relative;
+	font-weight: bold;
+	box-sizing: border-box;
+	line-height: 1.33333em;
+	font-size: 1.125rem;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 38px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	font-family: "Open Sans", sans-serif;
+	-webkit-transition: color .3s cubic-bezier(.55, .21, .51, .75), background-color .3s cubic-bezier(.55, .21, .51, .75), border-color .3s cubic-bezier(.55, .21, .51, .75);
+	-moz-transition: color .3s cubic-bezier(.55, .21, .51, .75), background-color .3s cubic-bezier(.55, .21, .51, .75), border-color .3s cubic-bezier(.55, .21, .51, .75);
+	transition: color .3s cubic-bezier(.55, .21, .51, .75), background-color .3s cubic-bezier(.55, .21, .51, .75), border-color .3s cubic-bezier(.55, .21, .51, .75);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.dollar-box input[type="button"] {
+	color: #5a5a5a;
+	background: #fff;
+	text-transform: none !important;
+	margin: 0;
+	padding: 0 !important;
+}
+
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
 /*
-	STYLE GUIDE
+#mockup h1, #mockup h2 {
+	font-family: "rift", sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: 0.3px;
+	color: #FFFFFF;
+}
+
+#mockup h1 {
+	font-size: 3.75em;
+}
+
+#mockup h2 {
+	font-size: 3.125em;
+}
+
+#mockup h3 {
+	font-family: "rift", sans-serif;
+	font-style: italic;
+	font-size: 2.5em;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	line-height: 1.3;
+	color: #E00122;	
+}
+
+#mockup h5 {
+	font-family: "rift", sans-serif;
+	font-style: italic;
+	font-size: 2.188em;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	line-height: 1.3;
+	color: #E00122;	
+}
+
+#mockup h6 {
+	font-family: "rift", sans-serif;
+	font-style: italic;
+	font-size: 1.563em;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	line-height: 1;
+	color: #FFFFFF;	
+}
+
+#mockup p {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-size: 1.125em;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #222;	
+}
+
+#mockup main a {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.125em;
+	color: #E00122;
+	text-decoration: underline;
+}
+
+@media (min-width: 48rem) {
+	:root {
+		--text-multiplier: 1.1 !important;
+	}
+}
+
 */
 
-.internal article h2,
-.internal section h2 {
-	color: #e00122;
-	margin-bottom: 1rem;
-}
-
-.internal img.imgLeft {
-	margin: 10px 20px 10px 0px !important;
-}
-
-.internal img.imgRight {
-	margin: 10px 0px 10px 20px !important;
-}
-
-.internal p.large {
-	font-family: "Open Sans", sans-serif;
-	font-style: normal !important;
-	font-size: 1.45em !important;
-	color: #222 !important;
-	font-weight: 700 !important;
-}
-
-/* ************************************\
-	#STYLE GUIDE
-************************************** */
 #mockup h1.pageTitle {
 	font-family: "rift", sans-serif;
 	font-style: italic;
@@ -6369,32 +7430,34 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
 	}
 }
 
-#mockup h1, #mockup h2, #mockup h3, #mockup h4, #mockup h5, #mockup h6 {
-	line-height: normal !important;
+.hide {
+	display: none !important;
+}
+
+.internal article h2 {
+	color: #e00122;
+	margin-bottom: 1rem;
+}
+
+.internal p.large {
+	font-family: "Open Sans", sans-serif;
+	font-style: normal !important;
+	font-size: 1.45em !important;
+	color: #222 !important;
+	font-weight: 700 !important;
+}
+
+.internal article img.imgLeft {
+	margin: 10px 20px 10px 0px !important;
+}
+
+.internal article img.imgRight {
+	margin: 10px 0px 10px 20px !important;
 }
 
 /*------------------------------------*\
   #IE-SUPPORT
 \*------------------------------------*/
-
-/*
-body #mockup .ie-not-supported {
-	display: none;
-}
-
-body.IE #mockup .ie-not-supported {
-	position: relative;
-    z-index: 1050;
-    border: 3px solid #e00122;
-    font-weight: bold;
-    font-size: 1.25em;
-	display: block;
-}
-
-body.IE #mockup header {
-	top: 36px;
-} 
-*/
 
 body #mockup .ie-not-supported {
 	display: none
