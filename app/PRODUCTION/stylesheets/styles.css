@@ -1122,6 +1122,7 @@ svg.scrollArrow {
 
 header nav {
 	height: 50px;
+	width: 100%;
 }
 
 /*------------------------------------*\
@@ -3589,6 +3590,7 @@ left: 5px;  */
 		top: 0;
 		bottom: 0;
 		margin: auto;
+		width: 15px;
 		line-height: 50px;
 		left: 15px;
 		text-align: center;
@@ -6339,31 +6341,58 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
 }
 
 /* HEADING 2 (H2) */
-#mockup:not(.internal) h2 {
+#mockup h2 {
 	font-size: calc(3.125em * var(--text-multiplier, 1)) !important;
 	margin-bottom: 0;
 }
 
 /* HEADING 3 (H3) */
-#mockup:not(.internal) h3 {
+#mockup h3 {
 	font-size: calc(2.5em * var(--text-multiplier, 1)) !important;
 	font-weight: 700;
+		transform: skew(0deg) !important;
+	}
+	#mockup .fa-home:hover:before {
+		color: #fff;
+	}
+	#mockup .navbar-header {
+		float: left;
+	}
+	#mockup .container>.navbar-header, #mockup .container-fluid>.navbar-header, #mockup .container>.navbar-collapse, #mockup .container-fluid>.navbar-collapse {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	#mockup .pull-left {
+		float: left !important;
+	}
+}
+
+#mockup .parallelogram {
+	-webkit-transform: skew(-30deg);
+	transform: skew(-30deg);
+}
+
+#mockup .skew-fix {
+	display: inline-block;
+	-webkit-transform: skew(30deg);
+	transform: skew(30deg);
+}
 }
 
 /* HEADING 4 (H4) */
-#mockup:not(.internal) h4 {
+#mockup h4 {
 	font-size: calc(2.188em * var(--text-multiplier, 1)) !important;
 	font-weight: 700;
 }
 
 /* HEADING 5 (H5) */
-#mockup:not(.internal) h5 {
+#mockup h5 {
 	font-size: calc(1.875em * var(--text-multiplier, 1)) !important;
 	font-weight: 700;
 }
 
 /* HEADING 6 (H6) */
-#mockup:not(.internal) h6 {
+#mockup h6 {
 	font-size: calc(1.563em * var(--text-multiplier, 1)) !important;
 	font-weight: 700;
 }
@@ -6421,6 +6450,7 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
 
 #mockup h2 {
 	font-size: 3.125em;
+	font-weight: 300 !important;
 }
 
 #mockup h3 {
@@ -6523,6 +6553,9 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
 	display: none !important;
 }
 
+#mockup.internal section .container, #mockup.give-to-uc>section>.container {
+    padding: 2em 0;
+}
 
 /* ************************************\
 	#Internal Styles	
@@ -6532,7 +6565,7 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
 #mockup.internal section h2 {
 	color: #e00122;
 	margin-bottom: 1rem;
-	font-weight: 700 !important;
+	font-weight: 300 !important;
 }
 
 #mockup.internal img.imgLeft {
@@ -6541,6 +6574,7 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
 
 #mockup.internal img.imgRight {
 	margin: 10px 0px 10px 20px !important;
+	width: unset !important;
 }
 
 #mockup p.large {
@@ -6640,6 +6674,21 @@ tbody.BBFormTable.DonationCaptureFormTable.pnlDonor .BBFieldControlCell.Donation
     font-weight: 600;
 }
 */
+
+#mockup .visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+header>.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
 
 /*------------------------------------*\
   #IE-SUPPORT
